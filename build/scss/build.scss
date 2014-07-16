@@ -1,0 +1,24 @@
+@import "settings";
+@import "foundations";
+@import "ui/mixins";
+
+//custom styles
+/* We use this media query to add styles to any device that supports media queries */
+@media #{$screen} { 
+	@import "ui/default";
+}
+
+/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
+@media #{$small} { 
+	@import "ui/small";
+}
+
+/* Used to alter styles for screens at least 1280px wide. */
+@media #{$medium} { 
+	@import "ui/medium";
+}
+
+/* Used to alter styles for screens at least 1440px wide. */
+@media #{$large} { 
+	@import "ui/large";
+}
