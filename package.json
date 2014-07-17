@@ -1,6 +1,7 @@
 {
-  "name": "foundation-libsass-template",
-  "version": "0.0.1",
+  "name": "tagga-baseline-project",
+  "version": "0.1.0",
+  "private" : true,
   "devDependencies": {
     "node-sass": "~0.7.0",
     "grunt": "~0.4.1",
