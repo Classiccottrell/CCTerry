@@ -1,12 +1,37 @@
 <!-- @include variables-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/Brand">
   <head>
+    <!-- Site Title -->
+    <title><!--$site_name--> | <!--$title--></title>
+    <meta name="description" content="<!--$description-->" />
+
+    <!-- Sets the character set, which speeds up rendering -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"> <!-- Instructs IE to use the latest supported mode with edge mode and Google Chrome Frame -->
+
+    <!-- Instructs IE to use the latest supported mode with edge mode and Google Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"> 
+
+    <!-- Sets the viewport to be responsive -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- Schema.org markup for Google+ --> 
+    <meta itemprop="name" content="<!--$title-->"> 
+    <meta itemprop="description" content="<!--$description-->"> 
+    <meta itemprop="image" content="<!--$image-->">
+
+    <!-- Open Graph Tags - http://ogp.me/ -->
+    <meta property="og:title" content="<!--$title-->" />
+    <meta property="og:site_name" content="<!--$site_name-->" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<!--$url-->" />
+    <meta property="og:image" content="<!--$image-->" />
+    <meta property="og:description" content="<!--$description-->" />
+
+    <!-- CSS -->
     <link href="<!--$base-->/css/app.css" rel="stylesheet">
-    <title>Foundation | Welcome</title>
+
+    <!-- Javascript -->
     <script src="//tagga-prod-images.s3.amazonaws.com/js/foundation/vendor/custom.modernizr.js" async></script>
 
     <!-- Uncomment to use Tagga Form -->
