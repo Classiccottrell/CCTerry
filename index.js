@@ -3,7 +3,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 // var formProxy = require('form-proxy');
-module.exports = require('./lib/form.js');
+var formProxy = require('./lib/form.js');
 
 var app = express();
 
