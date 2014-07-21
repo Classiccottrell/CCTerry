@@ -34,17 +34,38 @@
     <script src="//tagga-prod-images.s3.amazonaws.com/js/foundation/vendor/custom.modernizr.js" async></script>
 
     <!-- Uncomment to use Tagga Form -->
-    <!--script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script-->
-    <!--script src="//tagga-twt.s3.amazonaws.com/form/0.1.0/taggaform.min.js"></script-->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+    <script src="//tagga-twt.s3.amazonaws.com/form/0.1.0/taggaform.min.js"></script>
 
   </head>
-  <body ng-app="formApp">  <!-- Content goes here -->
+  <body>  <!-- Content goes here -->
     <div class="row">
       <div class="large-12 columns">
         <h2>Hello World</h2>
         <hr />
       </div>
     </div>
+
+<div ng-app="tagga-form">
+    <tagga-form model="contact">
+        <div>
+            <tagga-input name="username" minlength="2" maxlength="10" required placeholder="Username"></tagga-input>
+        </div>
+        <tagga-input name="first-name" required div-class="large-6 columns"></tagga-input>
+        <tagga-input name="middle_name"  div-class="large-6 columns"></tagga-input>
+        <tagga-input name="lname" required label="Last Name" ></tagga-input>
+        <tagga-input name="email" type="email" required></tagga-input>
+
+        <tagga-sms-opt-in name="mobileOptIn" shortcode="82442" keyword="GORDMANS" div-class="large-12 columns" label="lol plz send me spam"></tagga-sms-opt-in>
+
+        <tagga-email-opt-in name="emailOptIn" list-id="a165b43276c2b5889"></tagga-email-opt-in>
+
+        <div class="large-12 columns">
+            <input type="submit" value="Submit">
+        </div>
+    </tagga-form>
+</div>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script src="/app/js/app.js"></script>
   </body>
