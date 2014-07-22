@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../app/js/build-ck-sourcemap-source.coffee"],"names":[],"mappings":"CAEA;;;;;;;;07hBAusDA,SAAA,EAAA,EAAA,EAAA,g5OA2cA,EAAE,UAAU,aAWZ,EAAE,UAAU","file":"app.js","sourceRoot":"./../../"}
+{"version":3,"file":"app.js","sources":["../../build/js/build.coffee"],"names":[],"mappings":"CAAA","sourceRoot":"./../../"}

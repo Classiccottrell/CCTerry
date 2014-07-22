@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/Brand" class="no-js">
+<html lang="en" itemscope itemtype="http://schema.org/Brand">
   <head>
     <!-- Site Title -->
     <title>Site Name | Page Title</title>
@@ -33,8 +33,12 @@
     <!-- Javascript -->
     <script src="//tagga-prod-images.s3.amazonaws.com/js/foundation/vendor/custom.modernizr.js" async></script>
 
+    <!-- Uncomment to use Tagga Form -->
+    <!--script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script-->
+    <!--script src="//tagga-twt.s3.amazonaws.com/form/0.1.0/taggaform.min.js"></script-->
+
   </head>
-  <body ng-app="tagga-form">  <!-- Content goes here -->
+  <body ng-app="tagga-form">
     <div class="row">
       <div class="large-12 columns">
         <h2>Hello World</h2>
@@ -43,26 +47,17 @@
     </div>
 
     <tagga-form model="contact">
-        <div>
-            <tagga-input name="username" minlength="2" maxlength="10" required placeholder="Username"></tagga-input>
-        </div>
-        <tagga-input name="first-name" required div-class="large-6 columns"></tagga-input>
-        <tagga-input name="middle_name"  div-class="large-6 columns"></tagga-input>
-        <tagga-input name="lname" required label="Last Name" ></tagga-input>
-        <tagga-input name="email" type="email" required></tagga-input>
-
-        <tagga-sms-opt-in name="mobileOptIn" shortcode="82442" keyword="GORDMANS" div-class="large-12 columns" label="Custom SMS opt-in label"></tagga-sms-opt-in>
-
-        <tagga-email-opt-in name="emailOptIn" list-id="a165b43276c2b5889" for="email"></tagga-email-opt-in>
-
-        <div class="large-12 columns">
-            <input type="submit" value="Submit">
-        </div>
-    </tagga-form>
-
+  <tagga-input name="first-name" required></tagga-input>
+  <tagga-input name="last-name" required></tagga-input>
+  <tagga-input name="email"	required type="email"></tagga-input>
+  <tagga-sms-opt-in name="mobileOptIn" shortcode="82442" keyword="GORDMANS"></tagga-sms-opt-in>
+  <tagga-email-opt-in name="emailOptIn" for="email"list-id="1bf1f3826e5439ab64fe0b7a443619a3"></tagga-email-opt-in>
+  <div class="large-12 columns">
+      <input type="submit" value="Submit">
+  </div>
+</tagga-form>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script src="/app/js/app.js"></script>
-    <!-- Uncomment to use Tagga Form -->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
     <script src="//tagga-twt.s3.amazonaws.com/form/0.1.0/taggaform.min.js"></script>
     <!--<script src="http://localhost:5001/scripts/scripts.36979d99.js"></script>-->
