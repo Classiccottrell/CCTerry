@@ -1,8 +1,27 @@
-/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
-/* zurb.com */
-/* humanstxt.org */
+/* This site was built by Tagga Media, a software company in beautiful Vancouver, BC */
+
+/* tagga.com */
+
+/* TAGGA LABS TEAM */
+
+  Bryan Heredia
+  Jacob Pope
+  Matt Cottrell
+  Adam Ginthor
+  Sunil Mirpuri
+
+/* TAGGA DEV TEAM */
+
+  Tyler Brown
+  Jerome Cantin
+  Wenda (Tony) Yang
+  Bugra Firat
 
 /* SITE */
-  Standards: HTML5, CSS3
-  Components: jQuery, Orbit, Reveal
-  Software: Coda, Textmate, Git
+
+  Standards: HTML5, CSS3, ECMAScript 5
+  Components: Foundation 5, jQuery, Modernizr, Angular, Slick Carousel
+  Software: Sublime Text 3, CodeKit 2, Git, nginx
+
+
+  Connect, Profile, Engage!

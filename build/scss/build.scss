@@ -1,6 +1,8 @@
-@import "settings";
-@import "foundations";
-@import "ui/mixins";
+@import 
+	"normalize.scss", 
+	"settings.scss", 
+	"foundations.scss", 
+	"ui/mixins.scss";
 
 //custom styles
 /* We use this media query to add styles to any device that supports media queries */
