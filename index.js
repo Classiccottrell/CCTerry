@@ -2,8 +2,9 @@
 
 var express = require('express');
 var bodyParser = require('body-parser');
-// var formProxy = require('form-proxy');
 var formProxy = require('./lib/form.js');
+var OptInProxy = require('./lib/optin.js');
+// var util = require('util');
 
 var app = express();
 
@@ -15,24 +16,39 @@ app.use(bodyParser.json()); //parse all Content-Type: application/json
 
 //proxy to platform FormService
 app.route('/form').post(function(req, res, next) {
+	OptInProxy(
+		{
+			form: req.body.form_data,
+			iid: req.body.iid,
+			referer: req.get('Referer')
+		},
+		{
+			sms: 'http://platform.taggadev.com/widgetservices/weboptinsms',
+			email: 'https://api.createsend.com/api/v3.1/subscribers/'
+		},
+		function(outcome) {
+			//ignore opt-in outcome for now
+		}
+	);
 
 	//pass in rules (incomplete)
-	var rules = {
-		uName : 'string',
-		uEmail: 'email'
-	};
-
+	var rules = {};
 	//call to proxy request
-	formProxy({
-		form : req.body.form_data, //request.post apparently expects 'form' as key name for data
-		iid: req.body.iid, //iid from the user (comes from client)
-		referer : req.get('Referer'),
-		rules : rules
-	}, function(error, response, body) { //feed request params right back to the callback func
-		res.writeHead(response.statusCode, {'Content-Type': 'application/json'});
-		res.end(body); //return back proxied response body
-	});
-
+	formProxy(
+		{
+			form: req.body.form_data, //request.post apparently expects 'form' as key name for data
+			iid: req.body.iid, //iid from the user (comes from client)
+			referer: req.get('Referer'),
+			rules: rules,
+		},
+		{
+			url: 'http://platform.taggadev.com/widgetservices/form'
+		},
+		function(outcome) { //feed request params right back to the callback func
+			res.writeHead(outcome.code, {'Content-Type': 'application/json'});
+			res.end(outcome.body);
+		}
+	);
 });
 
 //start listening on port
