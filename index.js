@@ -2,9 +2,7 @@
 
 var express = require('express');
 var bodyParser = require('body-parser');
-var formProxy = require('./lib/form.js');
-var OptInProxy = require('./lib/optin.js');
-// var util = require('util');
+var Proxy = require('form-proxy');
 
 var app = express();
 
@@ -16,7 +14,7 @@ app.use(bodyParser.json()); //parse all Content-Type: application/json
 
 //proxy to platform FormService
 app.route('/form').post(function(req, res, next) {
-	OptInProxy(
+	Proxy.optinProxy(
 		{
 			form: req.body.form_data,
 			iid: req.body.iid,
@@ -34,7 +32,7 @@ app.route('/form').post(function(req, res, next) {
 	//pass in rules (incomplete)
 	var rules = {};
 	//call to proxy request
-	formProxy(
+	Proxy.formProxy(
 		{
 			form: req.body.form_data, //request.post apparently expects 'form' as key name for data
 			iid: req.body.iid, //iid from the user (comes from client)
