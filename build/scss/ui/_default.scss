@@ -1,5 +1,17 @@
 //styles for default view
 /*-------------------- General --------------------*/
+
+// Fix Checkbox wrapping problem
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+}
+
+label {
+  margin-bottom: 1rem;
+}
+
 /*-------------------- Header --------------------*/
 /*-------------------- Main --------------------*/
 /*-------------------- Footer --------------------*/
