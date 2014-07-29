@@ -5002,7 +5002,7 @@
 		"expandTabs": 1,
 		"fileType": 4096,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/README.md",
 		"outputAbbreviatedPath": "\/README.html",
 		"outputPathIsOutsideProject": 0,
