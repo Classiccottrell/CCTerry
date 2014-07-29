@@ -1,7 +1,8 @@
 @import 
 	"normalize.scss", 
 	"settings.scss", 
-	"foundations.scss", 
+	"foundations.scss",
+	"animate.scss", 
 	"ui/mixins.scss";
 
 //custom styles
@@ -10,17 +11,17 @@
 	@import "ui/default";
 }
 
-/* Used to alter styles for screens at least 768px wide. This is where the grid changes. */
-@media #{$small} { 
+/* Used to alter styles for screens 0px - 640px wide. This is where the grid changes. */
+@media #{$small-only} { 
 	@import "ui/small";
 }
 
-/* Used to alter styles for screens at least 1280px wide. */
-@media #{$medium} { 
+/* Used to alter styles for screens 641px - 1024px wide. */
+@media #{$medium-only} { 
 	@import "ui/medium";
 }
 
-/* Used to alter styles for screens at least 1440px wide. */
-@media #{$large} { 
+/* Used to alter styles for screens 1025px - 1440px wide. */
+@media #{$large-only} { 
 	@import "ui/large";
 }

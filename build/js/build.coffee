@@ -22,7 +22,7 @@
 # codekit-prepend '../../bower_components/foundation/js/foundation/foundation.slider.js'
 # codekit-prepend '../../bower_components/foundation/js/foundation/foundation.tab.js'
 # codekit-prepend '../../bower_components/foundation/js/foundation/foundation.tooltip.js'
-# @codekit-prepend '../../bower_components/foundation/js/foundation/foundation.topbar.js'
+# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.topbar.js'
 # codekit-prepend '../../bower_components/slick-carousel/slick/slick.min.js'
 
 $(document).foundation() # Intialize Foundation
