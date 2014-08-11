@@ -18,20 +18,19 @@ Next, we will cover how to make changes.  There are three folders in the project
 * `index.kit` and your other pages: `index.kit` should give you a good idea of what is going on.  The head.kit import includes your Doctype declaration, the opening HTML tag, the head of the document, and the opening body tag.  The footer.kit includes jQuery from Google's CDN (for caching optimization) and your compiled javascript, as well as the closing body and HTML tags.  Other then those two imports, you can include whatever you want to and however you want.  
 
 In simplest forms, this should be your workflow:  
+
 1. Open the site using the Server button on all the devices you will be testing
 2. Determine what Foundation components you will be using, adding the appropriate JS to your `build.coffee` prepends, and uncommenting the `foundations.scss` components.  Save the `build.coffee`, `foundations.scss`, and `build.scss` to compile all your changes.  
 3. Next, create your pages in the .kit format, with your head and footer includes.  These will automatically build to the `/app/` directory.  
 4. Create or customize the Kit components.  It's recommend that you focus on creating repeatable components, such as a header, and focus on using the `page.kit` files for structure.  
 5. Write your styles in the `/build/scss/ui` folder, keeping yourself organized by using the different sass files for various device sizes.  
-6. Place all your imagery in the `/app/img` folders, keeping organized and providing multiple sized versions for heavier images.  CodeKit has a built in optimizer, all you need to do is right click on the project icon in CodeKit, and click **Optimize all images in PROJECT NAME**.
+6. Place all your imagery in the `/app/img` folders, keeping organized and providing multiple sized versions for heavier images.  CodeKit has a built in optimizer, all you need to do is right click on the project icon in CodeKit, and click **Optimize all images in *PROJECT NAME***.
 7. Take advantage of CSS & JavaScript source mapping.  
 
 
 ## Animations
 
-Choose which modules you want to use in you project by setting the component to true/false in the `build/scss/animate/_settings.scss` file
-
-Add the base css styles mentioned in the BASE section above.  
+Choose which modules you want to use in you project by setting the component to true/false in the `build/scss/animate/_settings.scss` file.
 
 Finally in your markup, simply add the class `animated` to an element, along with any of the animation class names.  
 
