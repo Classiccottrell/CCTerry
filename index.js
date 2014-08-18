@@ -49,7 +49,7 @@ app.route('/form').post(function(req, res, next) {
 	);
 });
 
-app.route('/gplusCount').get(function(req, res, next) {
+app.route('/gplusCount').post(function(req, res, next) {
 	Proxy.gplusCount(req.body.url, function(outcome) {
 		res.writeHead(outcome.code, {'Content-Type': 'application/json'});
 		res.end(outcome.body);
