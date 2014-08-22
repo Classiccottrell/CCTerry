@@ -49,6 +49,13 @@ app.route('/form').post(function(req, res, next) {
 	);
 });
 
+app.route('/gplusCount').post(function(req, res, next) {
+	Proxy.gplusCount(req.body.url, function(outcome) {
+		res.writeHead(outcome.code, {'Content-Type': 'application/json'});
+		res.end(outcome.body);
+	});
+});
+
 //start listening on port
 app.listen(app.get('port'), function() {
 	console.log("Node app is running at localhost:" + app.get('port'))

@@ -54,7 +54,7 @@
 
   </head>
   
-  <body ng-app="tagga-form">
+  <body ng-app="app">
     <div class="row">
       <div class="small-12 columns">
         <h2>Hello World</h2>
@@ -78,5 +78,8 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
     <script src="//tagga-twt.s3.amazonaws.com/form/0.1.0/taggaform.min.js"></script>
     <!--<script src="http://localhost:5001/scripts/scripts.36979d99.js"></script>-->
+    <script>
+      angular.module('app', ['tagga-form']);
+    </script>
   </body>
 </html>
