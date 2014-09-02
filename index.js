@@ -56,6 +56,24 @@ app.route('/gplusCount').post(function(req, res, next) {
 	});
 });
 
+app.route('/sociallink').post(function(req, res, next) {
+	Proxy.socialLink(
+		{
+			url: req.body.url,
+			social_type: req.body.social_type,
+			iid: req.body.iid,
+			referer: req.get('Referer')
+		},
+		{
+			url: 'http://platform.inc.ly/widgetservices/sociallink'
+		},
+		function(outcome) {
+			res.writeHead(outcome.code, {'Content-Type': 'application/json'});
+			res.end(outcome.body);
+		}
+	);
+});
+
 //start listening on port
 app.listen(app.get('port'), function() {
 	console.log("Node app is running at localhost:" + app.get('port'))
