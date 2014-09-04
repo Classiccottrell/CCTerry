@@ -1,6 +1,6 @@
 {
   "name": "animate-sass",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "homepage": "https://github.com/tgdev/animate-sass",
   "authors": [
     "Tom Gillard <tomgillar@gmail.com>"
@@ -22,14 +22,14 @@
     "test",
     "tests"
   ],
-  "_release": "0.5.0",
+  "_release": "0.6.0",
   "_resolution": {
     "type": "version",
-    "tag": "v0.5.0",
-    "commit": "75d9e52e34d7d4b656a29d22d02362fad20f032e"
+    "tag": "v0.6.0",
+    "commit": "178793a436c50136e14be922490ffeef0283919b"
   },
   "_source": "git://github.com/tgdev/animate-sass.git",
-  "_target": "~0.5.0",
+  "_target": "~0.6.0",
   "_originalSource": "animate-sass",
   "_direct": true
 }
