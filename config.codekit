@@ -251,6 +251,15 @@
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+	"\/app\/sms_optin_terms_label.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/sms_optin_terms_label.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/bower_components\/animate-sass\/_animate.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
@@ -5127,6 +5136,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/build\/components\/_google-analytics.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/build\/components\/_google-analytics.kit",
+		"outputAbbreviatedPath": "\/app\/_google-analytics.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/build\/components\/_head.kit": {
 		"fileType": 2048,
 		"ignore": 1,
@@ -5342,6 +5360,15 @@
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 1
+		},
+	"\/build\/sms_optin_terms_label.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/build\/sms_optin_terms_label.kit",
+		"outputAbbreviatedPath": "\/app\/sms_optin_terms_label.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/index.html": {
 		"fileType": 8192,
