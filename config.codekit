@@ -5118,15 +5118,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 1
 		},
-	"\/build\/components\/_footer.kit": {
-		"fileType": 2048,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/build\/components\/_footer.kit",
-		"outputAbbreviatedPath": "\/app\/_footer.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/build\/components\/_form.kit": {
 		"fileType": 2048,
 		"ignore": 1,
