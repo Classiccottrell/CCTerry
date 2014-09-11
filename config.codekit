@@ -5118,6 +5118,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 1
 		},
+	"\/build\/components\/_footer.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/build\/components\/_footer.kit",
+		"outputAbbreviatedPath": "\/app\/_footer.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/build\/components\/_form.kit": {
 		"fileType": 2048,
 		"ignore": 1,
@@ -5219,7 +5228,7 @@
 		"outputAbbreviatedPath": "\/app\/css\/app.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 3,
+		"outputStyle": 1,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 0
@@ -5272,15 +5281,15 @@
 		"shouldRunBless": 1,
 		"useLibsass": 1
 		},
-	"\/build\/scss\/ui\/_large.scss": {
+	"\/build\/scss\/ui\/_large-only.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/build\/scss\/ui\/_large.scss",
-		"outputAbbreviatedPath": "\/build\/scss\/css\/_large.css",
+		"inputAbbreviatedPath": "\/build\/scss\/ui\/_large-only.scss",
+		"outputAbbreviatedPath": "\/build\/scss\/css\/_large-only.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -5288,20 +5297,52 @@
 		"shouldRunBless": 1,
 		"useLibsass": 1
 		},
-	"\/build\/scss\/ui\/_medium.scss": {
+	"\/build\/scss\/ui\/_large-up.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/build\/scss\/ui\/_medium.scss",
-		"outputAbbreviatedPath": "\/build\/scss\/css\/_medium.css",
+		"inputAbbreviatedPath": "\/build\/scss\/ui\/_large-up.scss",
+		"outputAbbreviatedPath": "\/build\/scss\/css\/_large-up.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
+	"\/build\/scss\/ui\/_medium-only.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/build\/scss\/ui\/_medium-only.scss",
+		"outputAbbreviatedPath": "\/build\/scss\/css\/_medium-only.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
+		"useLibsass": 1
+		},
+	"\/build\/scss\/ui\/_medium-up.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/build\/scss\/ui\/_medium-up.scss",
+		"outputAbbreviatedPath": "\/build\/scss\/css\/_medium-up.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
 		"useLibsass": 1
 		},
 	"\/build\/scss\/ui\/_mixins.scss": {
@@ -5320,20 +5361,36 @@
 		"shouldRunBless": 1,
 		"useLibsass": 1
 		},
-	"\/build\/scss\/ui\/_small.scss": {
+	"\/build\/scss\/ui\/_small-only.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/build\/scss\/ui\/_small.scss",
-		"outputAbbreviatedPath": "\/build\/scss\/css\/_small.css",
+		"inputAbbreviatedPath": "\/build\/scss\/ui\/_small-only.scss",
+		"outputAbbreviatedPath": "\/build\/scss\/css\/_small-only.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
+		"useLibsass": 1
+		},
+	"\/build\/scss\/ui\/_small-up.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/build\/scss\/ui\/_small-up.scss",
+		"outputAbbreviatedPath": "\/build\/scss\/css\/_small-up.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
 		"useLibsass": 1
 		},
 	"\/build\/scss\/ui\/_xlarge.scss": {

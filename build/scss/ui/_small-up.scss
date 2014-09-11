@@ -1,19 +1,10 @@
-// Used to alter default styles that can't be overwritten in foundation/settings
+// Used to alter styles for screens at least 0px wide
 
 // =================================================
 // ==================== General ====================
 // =================================================
 
-// Fix Checkbox wrapping problem
 
-input[type="checkbox"] {
-  margin-right: 0.5rem;
-  margin-bottom: 0;
-}
-
-label {
-  margin-bottom: 1rem;
-}
 
 // =================================================
 // ==================== Header =====================
