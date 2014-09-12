@@ -30,6 +30,5 @@
   },
   "_source": "git://github.com/tgdev/animate-sass.git",
   "_target": "~0.6.0",
-  "_originalSource": "animate-sass",
-  "_direct": true
+  "_originalSource": "animate-sass"
 }
