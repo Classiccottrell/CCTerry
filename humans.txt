@@ -7,21 +7,18 @@
   Bryan Heredia
   Jacob Pope
   Matt Cottrell
-  Adam Ginthor
   Sunil Mirpuri
 
 /* TAGGA DEV TEAM */
 
-  Tyler Brown
   Jerome Cantin
-  Wenda (Tony) Yang
   Bugra Firat
 
 /* SITE */
 
   Standards: HTML5, CSS3, ECMAScript 5
   Components: Foundation 5, jQuery, Modernizr, Angular, Slick Carousel
-  Software: Sublime Text 3, CodeKit 2, Git, nginx
+  Software: Sublime Text 3, CodeKit 2, Git, nginx, Docker, Dokku
 
 
   Connect, Profile, Engage!
