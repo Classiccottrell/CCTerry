@@ -3,6 +3,8 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var Proxy = require('form-proxy');
+var request = require('request');
+var merge = require('merge');
 
 var app = express();
 
@@ -65,13 +67,34 @@ app.route('/sociallink').post(function(req, res, next) {
 			referer: req.get('Referer')
 		},
 		{
-			url: 'http://platform.inc.ly/widgetservices/sociallink'
+			url: 'http://platform.taggadev.com/widgetservices/sociallink'
 		},
 		function(outcome) {
 			res.writeHead(outcome.code, {'Content-Type': 'application/json'});
 			res.end(outcome.body);
 		}
 	);
+});
+
+app.get('/storelocator', function(req, res, next) {
+	request.post({
+		url: 'http://platform.taggadev.com/widgetservices/storelocator',
+		json: true,
+		form: req.query
+	}, function(error, response, body) {
+		res.status(200).json(body);
+	});
+});
+
+app.post('/storelocator', function(req, res, next) {
+	var params = merge(true, req.query, req.body);
+	request.post({
+		url: 'http://platform.taggadev.com/widgetservices/storelocatorSearch',
+		json: true,
+		form: params
+	}, function(error, response, body) {
+		res.status(200).json(body);
+	});
 });
 
 //start listening on port

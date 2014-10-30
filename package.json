@@ -13,6 +13,7 @@
     "express": "^4.6.1",
     "anchor": "^0.9.13",
     "request": "^2.36.0",
+    "merge": "^1.2.0",
     "form-proxy": "git+ssh://gitolite@tools.tagga.com:tagga-form-proxy.git"
   }
 }
