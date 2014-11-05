@@ -28,11 +28,9 @@ var logger = function (req, res, next) {
 			url: 'http://platform.taggadev.com/widgetservices/pagehit',
 			json: true,
 			form: logData
-		}, function(error, response, body) {
-		console.log(body);
-	});
-		console.log(logData);
-		// console.log('logger:', req.get('user-agent'), req.get('accept-language'), req.get('referer'), req.headers['x-forwarded-for'] , req.connection.remoteAddress, req.path);
+		// }, function(error, response, body) {console.log(body);});
+		});
+		// console.log(logData);
 	}
 
 	next();
