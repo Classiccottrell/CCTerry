@@ -1,5 +1,5 @@
 "use strict";
-/////
+
 var express = require('express');
 var bodyParser = require('body-parser');
 var Proxy = require('form-proxy');
@@ -10,8 +10,36 @@ var app = express();
 
 app.set('port', (process.env.PORT || 5000)); //set port
 
-app.use(express.static(__dirname+'/app')); //serve static files from /app
-app.use('/app', express.static(__dirname+'/app')); //also allow /app to be served
+var logger = function (req, res, next) {
+	var path = req.path;
+
+	//log only if its a route, or a html or html file
+	if( path.indexOf('.') == -1 || 
+		(path.indexOf('.') > -1 && (path.indexOf('.html') != -1 || path.indexOf('.htm') != -1) ) ) {
+		var logData = {
+			HTTP_USER_AGENT: req.get('user-agent'),
+			HTTP_ACCEPT_LANGUAGE: req.get('accept-language'),
+			HTTP_REFERER: req.get('referer'),
+			REMOTE_ADDR: req.headers['x-forwarded-for'] || req.connection.remoteAddress,
+			referer: req.headers['host']
+		}
+
+		request.post({
+			url: 'http://platform.taggadev.com/widgetservices/pagehit',
+			json: true,
+			form: logData
+		}, function(error, response, body) {
+		console.log(body);
+	});
+		console.log(logData);
+		// console.log('logger:', req.get('user-agent'), req.get('accept-language'), req.get('referer'), req.headers['x-forwarded-for'] , req.connection.remoteAddress, req.path);
+	}
+
+	next();
+};
+
+app.use(logger, express.static(__dirname+'/app')); //serve static files from /app
+app.use('/app', logger, express.static(__dirname+'/app')); //also allow /app to be served
 app.use(bodyParser.json()); //parse all Content-Type: application/json
 
 //proxy to platform FormService
