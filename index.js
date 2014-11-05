@@ -21,7 +21,7 @@ var logger = function (req, res, next) {
 			HTTP_ACCEPT_LANGUAGE: req.get('accept-language'),
 			HTTP_REFERER: req.get('referer'),
 			REMOTE_ADDR: req.headers['x-forwarded-for'] || req.connection.remoteAddress,
-			referer: req.headers['host']
+			referer: req.protocol + '://' + req.headers['host']
 		}
 
 		request.post({
@@ -38,7 +38,8 @@ var logger = function (req, res, next) {
 	next();
 };
 
-app.use(logger, express.static(__dirname+'/app')); //serve static files from /app
+app.use(logger);
+app.use(express.static(__dirname+'/app')); //serve static files from /app
 app.use('/app', logger, express.static(__dirname+'/app')); //also allow /app to be served
 app.use(bodyParser.json()); //parse all Content-Type: application/json
 
