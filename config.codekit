@@ -251,17 +251,6 @@
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
-	"\/app\/js\/modernizr.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/app\/js\/modernizr.js",
-		"outputAbbreviatedPath": "\/app\/js\/min\/modernizr-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
 	"\/bower_components\/angular-cookies\/angular-cookies.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -5575,17 +5564,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/index.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.js",
-		"outputAbbreviatedPath": "\/min\/index-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
 		},
 	"\/README.md": {
 		"enableFootnoteSupport": 0,
