@@ -13,10 +13,15 @@
 	# @codekit-prepend '../../bower_components/angular-cookies/angular-cookies.js'
 	# @codekit-prepend '../../bower_components/angular-resource/angular-resource.js'
 	# @codekit-prepend '../../bower_components/angular-route/angular-route.js'
-	# @codekit-prepend 'tagga-twt.min.js'
+	# @codekit-prepend '../../bower_components/tagga-twt/tagga-twt.min.js'
 
 # Intialize Tagga App
 angular.module "app", ["tagga-twt"]
+angular.module("app").config [
+  "taggaIIDProvider"
+  (taggaIIDProvider) ->
+    taggaIIDProvider.setIIDUrl "https://platform.taggadev.com/widgetservices/iid"
+]
 
 # Optional Foundation JS - leave commented out
 # Add an '@' in front of 'codekit-prepend' to load that JS

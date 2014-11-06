@@ -5254,6 +5254,28 @@
 		"shouldRunBless": 0,
 		"useLibsass": 1
 		},
+	"\/bower_components\/tagga-twt\/tagga-twt.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/tagga-twt\/tagga-twt.js",
+		"outputAbbreviatedPath": "\/bower_components\/tagga-twt\/min\/tagga-twt-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/tagga-twt\/tagga-twt.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/tagga-twt\/tagga-twt.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/tagga-twt\/min\/tagga-twt.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
 	"\/build\/components\/_footer.kit": {
 		"fileType": 2048,
 		"ignore": 1,
