@@ -1,29 +1,47 @@
-# Default JS Files - leave commented out
+##################################
+# Default JS Files - leave as is #
+##################################
 
-# @codekit-prepend '../../bower_components/fastclick/lib/fastclick.js'
-# @codekit-prepend '../../bower_components/jquery-placeholder/jquery.placeholder.js'
-# @codekit-prepend '../../bower_components/jquery.cookie/jquery.cookie.js'
-# @codekit-prepend '../../bower_components/foundation/js/foundation/foundation.js'
+	# @codekit-prepend '../../bower_components/jquery/dist/jquery.js'
+	# @codekit-prepend '../../bower_components/fastclick/lib/fastclick.js'
+	# @codekit-prepend '../../bower_components/jquery-placeholder/jquery.placeholder.js'
+	# @codekit-prepend '../../bower_components/jquery.cookie/jquery.cookie.js'
+	# @codekit-prepend '../../bower_components/foundation/js/foundation/foundation.js'
+
+	# Angular Files
+	# @codekit-prepend '../../bower_components/angular/angular.js'
+	# @codekit-prepend '../../bower_components/angular-cookies/angular-cookies.js'
+	# @codekit-prepend '../../bower_components/angular-resource/angular-resource.js'
+	# @codekit-prepend '../../bower_components/angular-route/angular-route.js'
+	# @codekit-prepend '../../bower_components/tagga-twt/tagga-twt.min.js'
+
+# Intialize Tagga App
+angular.module "app", ["tagga-twt"]
+angular.module("app").config [
+  "taggaIIDProvider"
+  (taggaIIDProvider) ->
+    taggaIIDProvider.setIIDUrl "https://platform.taggadev.com/widgetservices/iid"
+]
 
 # Optional Foundation JS - leave commented out
 # Add an '@' in front of 'codekit-prepend' to load that JS
 
-# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.abide.js'
-# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.accordion.js'
-# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.alert.js'
-# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.clearing.js'
-# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.dropdown.js'
-# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.equalizer.js'
-# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.interchange.js'
-# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.joyride.js'
-# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.magellan.js'
-# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.offcanvas.js'
-# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.reveal.js'
-# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.slider.js'
-# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.tab.js'
-# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.tooltip.js'
-# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.topbar.js'
-# codekit-prepend '../../bower_components/slick-carousel/slick/slick.min.js'
+	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.abide.js'
+	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.accordion.js'
+	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.alert.js'
+	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.clearing.js'
+	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.dropdown.js'
+	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.equalizer.js'
+	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.interchange.js'
+	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.joyride.js'
+	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.magellan.js'
+	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.offcanvas.js'
+	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.reveal.js'
+	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.slider.js'
+	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.tab.js'
+	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.tooltip.js'
+	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.topbar.js'
+	# codekit-prepend '../../bower_components/slick-carousel/slick/slick.min.js'
 
 $(document).foundation() # Intialize Foundation
 

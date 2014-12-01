@@ -74,7 +74,7 @@ Add animate-sass to your project using [Bower](http://bower.io)
 bower.json dependency
 ````
 "dependencies": {
-  "animate-sass": "0.4.0"
+  "animate-sass": "0.6.2"
 }
 ````
 
@@ -124,6 +124,14 @@ You can [check out the original animate.css here](http://daneden.me/animate). Se
 
 
 ##Changelog
+
+v0.6.2 - Fixed mixin issue with Firefox and IE adding quotes to the animation-name property.
+
+v0.6.1 - Merged pull request fixing issue with animate filename
+
+v0.6.0 - Merged pull request adding new animations. Updating bower version.
+
+v0.5.0 - Merged various pull requests to fix issues with 3rd party frameworks Bourbon and Libsass.
 
 v0.4.0 - Added override option of all variables. Made sass file a partial to be imported into projects stylesheet without generating a standalone css file. Removed base helper partial in favour of copying the css into projects sass stylesheet.
 

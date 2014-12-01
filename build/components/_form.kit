@@ -1,10 +1,13 @@
-<tagga-form model="contact">
-  <tagga-input name="first-name" required></tagga-input>
-  <tagga-input name="last-name" required></tagga-input>
-  <tagga-input name="email" required type="email"></tagga-input>
-  <tagga-sms-opt-in div-class"large-6 columns" name="mobileOptIn" shortcode="82442" keyword="GORDMANS"></tagga-sms-opt-in>
-  <tagga-email-opt-in name="emailOptIn" for="email"list-id="1bf1f3826e5439ab64fe0b7a443619a3"></tagga-email-opt-in>
+<tg-form model="contact" post-submit-url="thank-you.html">
+  <tg-input name="first-name" required></tg-input>
+  <tg-input name="last-name" required></tg-input>
+  <tg-input name="email" type="email" required></tg-input>
+  <tg-sms-opt-in name="mobileOptIn" shortcode="82442" keyword="GORDMANS"></tg-sms-opt-in>
+  <tg-email-opt-in name="emailOptIn" for="email" list-id="1bf1f3826e5439ab64fe0b7a443619a3" firstname-field="first-name" lastname-field="last-name" api-key="faea"></tg-email-opt-in>
+  <div class="large-12 columns">
+ 		<tg-input type="checkbox" name="age_agree" label="<span id='terms-checkbox'>I am at least 18 years of age and agree to the full</span> <a href='terms-and-conditions.html' id='terms-link' target='_blank'>Terms and Conditions</a>" required></tg-input>
+ 	</div>
   <div class="large-12 columns">
       <button type="submit">Submit</button>
   </div>
-</tagga-form>
+</tg-form>
