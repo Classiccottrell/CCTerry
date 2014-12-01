@@ -14,7 +14,6 @@
 
   Tyler Brown
   Jerome Cantin
-  Wenda (Tony) Yang
   Bugra Firat
 
 /* SITE */
