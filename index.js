@@ -25,7 +25,7 @@ var logger = function (req, res, next) {
 		}
 
 		request.post({
-			url: 'http://platform.taggadev.com/widgetservices/pagehit',
+			url: 'http://platform.tagga.com/widgetservices/pagehit',
 			json: true,
 			form: logData
 		// }, function(error, response, body) {console.log(body);});
@@ -50,7 +50,7 @@ app.route('/form').post(function(req, res, next) {
 			referer: req.get('Referer')
 		},
 		{
-			sms: 'http://platform.taggadev.com/widgetservices/weboptinsms',
+			sms: 'http://platform.tagga.com/widgetservices/weboptinsms',
 			email: 'https://api.createsend.com/api/v3.1/subscribers/'
 		},
 		function(outcome) {
@@ -69,7 +69,7 @@ app.route('/form').post(function(req, res, next) {
 			rules: rules,
 		},
 		{
-			url: 'http://platform.taggadev.com/widgetservices/form'
+			url: 'http://platform.tagga.com/widgetservices/form'
 		},
 		function(outcome) { //feed request params right back to the callback func
 			res.writeHead(outcome.code, {'Content-Type': 'application/json'});
@@ -94,7 +94,7 @@ app.route('/sociallink').post(function(req, res, next) {
 			referer: req.get('Referer')
 		},
 		{
-			url: 'http://platform.taggadev.com/widgetservices/sociallink'
+			url: 'http://platform.tagga.com/widgetservices/sociallink'
 		},
 		function(outcome) {
 			res.writeHead(outcome.code, {'Content-Type': 'application/json'});
@@ -105,7 +105,7 @@ app.route('/sociallink').post(function(req, res, next) {
 
 app.get('/storelocator', function(req, res, next) {
 	request.post({
-		url: 'http://platform.taggadev.com/widgetservices/storelocator',
+		url: 'http://platform.tagga.com/widgetservices/storelocator',
 		json: true,
 		form: req.query
 	}, function(error, response, body) {
@@ -116,7 +116,7 @@ app.get('/storelocator', function(req, res, next) {
 app.post('/storelocator', function(req, res, next) {
 	var params = merge(true, req.query, req.body);
 	request.post({
-		url: 'http://platform.taggadev.com/widgetservices/storelocatorSearch',
+		url: 'http://platform.tagga.com/widgetservices/storelocatorSearch',
 		json: true,
 		form: params
 	}, function(error, response, body) {
