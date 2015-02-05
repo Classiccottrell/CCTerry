@@ -20,7 +20,7 @@ angular.module "app", ["tagga-twt"]
 angular.module("app").config [
   "taggaIIDProvider"
   (taggaIIDProvider) ->
-    taggaIIDProvider.setIIDUrl "https://platform.taggadev.com/widgetservices/iid"
+    taggaIIDProvider.setIIDUrl "https://platform.tagga.com/widgetservices/iid"
 ]
 
 # Optional Foundation JS - leave commented out
