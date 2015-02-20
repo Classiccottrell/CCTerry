@@ -15,5 +15,8 @@
     "request": "^2.36.0",
     "merge": "^1.2.0",
     "form-proxy": "git+ssh://gitolite@tools.tagga.com:tagga-form-proxy.git"
+  },
+  "engines": {
+    "node": "0.10.x"
   }
 }
