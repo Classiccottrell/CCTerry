@@ -25,7 +25,7 @@ By only choosing the animation modules you need, you're keeping the compiled css
 Eg:
 ````
 // These will be included
-$use-FadeIn: true;
+$use-fadeIn: true;
 $use-fadeOut: true;
 ````
 
@@ -124,6 +124,10 @@ You can [check out the original animate.css here](http://daneden.me/animate). Se
 
 
 ##Changelog
+
+v0.6.4 - Adding missing slide enter/exit animation modules
+
+v0.6.3 - Removed Sass deprecation warnings about unquote().
 
 v0.6.2 - Fixed mixin issue with Firefox and IE adding quotes to the animation-name property.
 

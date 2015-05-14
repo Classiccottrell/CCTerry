@@ -2,17 +2,17 @@
 # Default JS Files - leave as is #
 ##################################
 
-	# @codekit-prepend '../../bower_components/jquery/dist/jquery.js'
+	# @codekit-prepend '../../bower_components/jquery/dist/jquery.min.js'
 	# @codekit-prepend '../../bower_components/fastclick/lib/fastclick.js'
-	# @codekit-prepend '../../bower_components/jquery-placeholder/jquery.placeholder.js'
+	# @codekit-prepend '../../bower_components/jquery-placeholder/jquery.placeholder.min.js'
 	# @codekit-prepend '../../bower_components/jquery.cookie/jquery.cookie.js'
 	# @codekit-prepend '../../bower_components/foundation/js/foundation/foundation.js'
 
 	# Angular Files
-	# @codekit-prepend '../../bower_components/angular/angular.js'
-	# @codekit-prepend '../../bower_components/angular-cookies/angular-cookies.js'
-	# @codekit-prepend '../../bower_components/angular-resource/angular-resource.js'
-	# @codekit-prepend '../../bower_components/angular-route/angular-route.js'
+	# @codekit-prepend '../../bower_components/angular/angular.min.js'
+	# @codekit-prepend '../../bower_components/angular-cookies/angular-cookies.min.js'
+	# @codekit-prepend '../../bower_components/angular-resource/angular-resource.min.js'
+	# @codekit-prepend '../../bower_components/angular-route/angular-route.min.js'
 	# @codekit-prepend '../../bower_components/tagga-twt/tagga-twt.min.js'
 
 # Intialize Tagga App
@@ -23,7 +23,7 @@ angular.module("app").config [
     taggaIIDProvider.setIIDUrl "https://platform.tagga.com/widgetservices/iid"
 ]
 
-# Optional Foundation JS - leave commented out
+# Optional Component JS - leave commented out
 # Add an '@' in front of 'codekit-prepend' to load that JS
 
 	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.abide.js'
@@ -41,7 +41,22 @@ angular.module("app").config [
 	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.tab.js'
 	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.tooltip.js'
 	# codekit-prepend '../../bower_components/foundation/js/foundation/foundation.topbar.js'
-	# codekit-prepend '../../bower_components/slick-carousel/slick/slick.min.js'
+	# codekit-prepend '../../bower_components/parallaxjs/parallax.min.js'
+	# @codekit-prepend '../../bower_components/wow/dist/wow.min.js'
+
+# Get URL Parameter
+# To use, declare a variable and use the function, passing in the desired parameter
+
+getUrlParameter = (sParam) ->
+  sPageURL = window.location.search.substring(1)
+  sURLVariables = sPageURL.split("&")
+  i = 0
+  while i < sURLVariables.length
+    sParameterName = sURLVariables[i].split("=")
+    return sParameterName[1]  if sParameterName[0] is sParam
+    i++
+
+# share = getUrlParameter("share")
 
 $(document).foundation() # Intialize Foundation
 
@@ -254,3 +269,7 @@ $("#scope").foundation() # Intialize all JS components with default settings
 #     useCSS: true # Enable/Disable CSS Transitions
 #     vertical: false # Vertical slide mode
 #  return
+
+# WOW.js - http://mynameismatthieu.com/WOW/docs.html
+
+# (new WOW).init()
