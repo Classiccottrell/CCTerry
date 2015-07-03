@@ -1,4 +1,4 @@
-/*! http://mths.be/placeholder v2.1.0 by @mathias */
+/*! http://mths.be/placeholder v2.1.1 by @mathias */
 (function(factory) {
 	if (typeof define === 'function' && define.amd) {
 		// AMD
@@ -9,7 +9,7 @@
 	}
 }(function($) {
 
-	// Opera Mini v7 doesn’t support placeholder although its DOM seems to indicate so
+	// Opera Mini v7 doesn't support placeholder although its DOM seems to indicate so
 	var isOperaMini = Object.prototype.toString.call(window.operamini) == '[object OperaMini]';
 	var isInputSupported = 'placeholder' in document.createElement('input') && !isOperaMini;
 	var isTextareaSupported = 'placeholder' in document.createElement('textarea') && !isOperaMini;
@@ -60,7 +60,7 @@
 					return $passwordInput[0].value;
 				}
 
-				return $element.data('placeholder-enabled') && $element.hasClass('placeholder') ? '' : element.value;
+				return $element.data('placeholder-enabled') && $element.hasClass(settings.customClass) ? '' : element.value;
 			},
 			'set': function(element, value) {
 				var $element = $(element);

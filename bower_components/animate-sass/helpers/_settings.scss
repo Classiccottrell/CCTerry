@@ -7,6 +7,8 @@
 $base-duration					: 1s !default;           // used in 1-base module
 $base-origin 					: top center !default;
 $base-degrees 					: 30deg !default;        // used in lightspeed & special modules
+$base-fill-mode					: both !default;
+$base-iteration-count			: infinite !default;
 
 $base-timing-function-in		: ease-in !default;
 $base-timing-function-out		: ease-out !default;
@@ -101,6 +103,20 @@ $use-rotateOutUpRight 	: 	false !default;
 $use-rotateOutDownLeft 	: 	false !default;
 $use-rotateOutDownRight : 	false !default;
 
+
+// Slide Enter
+$use-slideIn			:   false !default;
+$use-slideInUp			:   false !default;
+$use-slideInDown		:   false !default;
+$use-slideInLeft		:   false !default;
+$use-slideInRight		:   false !default;
+
+// Slide Exit
+$use-slideOut			:   false !default;
+$use-slideOutUp			:   false !default;
+$use-slideOutDown		:   false !default;
+$use-slideOutLeft		:   false !default;
+$use-slideOutRight		:   false !default;
 
 // Flippers
 $use-flip				:	false !default;

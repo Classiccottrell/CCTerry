@@ -1,6 +1,6 @@
 {
   "name": "tagga-baseline-project",
-  "version": "0.1.0",
+  "version": "1.2.0",
   "private" : true,
   "devDependencies": {
     "node-sass": "~0.7.0",
