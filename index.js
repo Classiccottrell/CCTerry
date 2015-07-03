@@ -21,7 +21,7 @@ var logger = function (req, res, next) {
 			HTTP_ACCEPT_LANGUAGE: req.get('accept-language'),
 			HTTP_REFERER: req.get('referer'),
 			REMOTE_ADDR: req.headers['x-forwarded-for'] || req.connection.remoteAddress,
-			referer: req.protocol + '://' + req.headers['host']
+			referer: req.protocol + '://' + req.headers['host'] + req.originalUrl
 		}
 
 		request.post({
