@@ -1,0 +1,100 @@
+// =================================================
+// ================ General Helpers ================
+// =================================================
+
+// Sticky footers - http://www.cssstickyfooter.com/
+@mixin sticky-footer($footerHeight: 180px) {
+  html, body {
+    height: 100%;
+  }
+  
+  .container {
+    min-height: 100%;
+  }
+  
+  .main-container {
+    overflow:auto;
+    padding-bottom: $footerHeight;}  /* must be same height as the footer */
+  
+  .footer-container {
+    position: relative;
+    margin-top: -$footerHeight; /* negative value of footer height */
+    height: $footerHeight;
+    clear:both;
+  } 
+  
+  /*Opera Fix*/
+  body:before {/* thanks to Maleika (Kohoutec)*/
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+  }
+}
+
+@mixin square($dimensions: 100px) {
+  height: $dimensions;
+  width: $dimensions;
+}
+@mixin image-link($img, $img-width, $img-height) {
+  display: block;
+  width: $img-width;
+  height: 1px;
+  padding-top: $img-height;
+  overflow: hidden;
+  background: $img; 
+}
+@mixin retina-img($img, $img-width, $img-height) {
+  width: $img-width;
+  height: $img-height;
+  background: $img; 
+  background-size: $img-width auto;
+}
+@mixin placeholder($color) {
+  ::-webkit-input-placeholder {
+     color: $color;
+     font-weight: bold;
+  }
+  
+  :-moz-placeholder { /* Firefox 18- */
+     color: $color;  
+     font-weight: bold;
+  }
+  
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: $color;  
+     font-weight: bold;
+  }
+  
+  :-ms-input-placeholder {  
+     color: $color;  
+     font-weight: bold;
+  }
+}
+@function pt-px($ptval, $base: 1.33333333333) {
+  @return round($ptval * $base) * 1px;
+}
+@function pt-em($ptval, $base: 0.08333333333) {
+  @return ($ptval * $base) * 1em;
+}
+@function pt-rem($ptval, $base: 0.08333333333) {
+  @return ($ptval * $base) * 1rem;
+}
+@function px-rem($pxval, $base: 0.063) {
+  @return ($pxval * $base) * 1rem;
+}
+
+// Styles needed for Animation, please leave in
+
+body {
+  -webkit-backface-visibility: hidden; // Addresses a small issue in webkit: http://bit.ly/NEdoDq
+}
+.animated {
+  @include animate-prefixer(animation-duration, $base-duration);
+  @include animate-prefixer(animation-fill-mode, both);
+
+  &.hinge {
+    @include animate-prefixer(animation-duration, $base-duration * 2);
+  }
+}
