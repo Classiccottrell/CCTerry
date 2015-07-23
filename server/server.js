@@ -6,8 +6,9 @@ var Promise = require('bluebird');
 var request = require('request');
 Promise.promisifyAll(request);
 
+var TaggaProxy = require('tagga-proxy');
 //taggaProxy config
-var taggaProxy = require('tagga-proxy')({
+var taggaProxy = new TaggaProxy({
 	platformBase: 'http://platform.tagga.com',
 	optIn: {
 		providers: [
