@@ -35,7 +35,7 @@ angular.module('app')
 			controller: 'HomeController'
 		})
 		.state('share', {
-			url: '/share/:imageUrl',
+			url: '/share',
 			templateUrl: 'html/templates/share.html',
 			controller: 'ShareController'
 		})
