@@ -14,7 +14,7 @@
     "express": "^4.13.0",
     "merge": "^1.2.0",
     "request": "^2.58.0",
-    "tagga-proxy": "git+ssh://gitolite@tools.tagga.com:tagga-proxy.git#1.2.4"
+    "tagga-proxy": "git+ssh://gitolite@tools.tagga.com:tagga-proxy.git#1.2.5"
   },
   "devDependencies": {
     "bower": "^1.4.1",
