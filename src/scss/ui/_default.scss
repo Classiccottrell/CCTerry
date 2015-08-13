@@ -18,12 +18,88 @@ label {
 // =================================================
 // ==================== Header =====================
 // =================================================
+body {
+	color: $white;
+}
 
+h1 {
+	color: $white;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	font-size: 22px;
+}
 
+h3 {
+	color: $white;
+}
+
+small {
+	font-size: 11px;
+	letter-spacing: 15px;
+	padding-top: 0;
+	margin-top: 0;
+	line-height: 2;
+
+}
+
+a {
+	color: #3A60CF;
+}
 
 // =================================================
 // ==================== Main =======================
 // =================================================
+
+.intro-blk {
+	small {
+		padding-bottom: 1em;
+		margin-bottom: 1em;
+	}
+
+	p {
+		margin-top: 2em;
+	}
+}
+
+#header {
+	border-bottom: 2px solid $blue5;
+	margin-bottom: 150px;
+	background-color: $blue2;
+
+	.cc-logo {
+	height: 150px;
+	margin: 0 auto;
+	display: block;
+	
+}
+
+	ul,li {
+		list-style-type: none;
+		float: right;
+		margin: 1em;
+	}
+
+	li {
+		display: inline-block;
+		// background-color: $blue4;
+		// padding: 1em 2em;
+		// border-radius: 15px;
+		a {
+			color: $white;
+			font-weight: light;
+			font-size: 1em;
+			font-family: Menlo;
+			letter-spacing: 2px;
+
+		}
+		a:hover {
+			border-bottom: 4px solid $blue5;
+			padding-bottom: 8px;
+		}
+
+	}
+
+}
 
 
 
@@ -31,4 +107,15 @@ label {
 // ==================== Footer =====================
 // =================================================
 
+#footer {
+	ul {
+		list-style-type: none;
 
+		li {
+			list-style-type: inline;
+			display: inline-block;
+			padding: 0 10px;
+		}
+	}
+
+}
