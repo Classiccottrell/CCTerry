@@ -20,13 +20,14 @@ label {
 // =================================================
 body {
 	color: $white;
+	background-image: url ("img/bg.jpg")
 }
 
 h1 {
 	color: $white;
 	padding-bottom: 0;
 	margin-bottom: 0;
-	font-size: 22px;
+	font-size: 24px;
 }
 
 h3 {
@@ -64,12 +65,12 @@ a {
 #header {
 	border-bottom: 2px solid $blue5;
 	margin-bottom: 150px;
-	background-color: $blue2;
+	background-color: $jet;
 
 	.cc-logo {
 	height: 150px;
 	margin: 0 auto;
-	display: block;
+	display: inline-block;
 	
 }
 
