@@ -15,11 +15,16 @@ label {
   margin-bottom: 1rem;
 }
 
+a {
+	color: #494949;
+    text-decoration: underline;
+}
+
 // =================================================
 // ==================== Header =====================
 // =================================================
 body {
-	background-image: url ("img/default/header-bg.jpg");
+	background-image: url ("https://www.gordmans-direct.tag.ga/img/default/header-bg.jpg");
 }
 
 h1 {
@@ -42,9 +47,12 @@ small {
 
 }
 
+
 // =================================================
 // ==================== Main =======================
 // =================================================
+
+
 #main {
 	    padding-top: 555px;
 }
@@ -69,7 +77,8 @@ small {
 
 .side-txt {
 	color: #4c93d6;
-	font-size: 1.5em;
+	font-size: 2em;
+	line-height: 1.5;
 }
 
 
@@ -79,14 +88,7 @@ small {
 // =================================================
 
 #footer {
-	ul {
-		list-style-type: none;
-
-		li {
-			list-style-type: inline;
-			display: inline-block;
-			padding: 0 10px;
-		}
+	p {
+		font-size: 13px;
 	}
-
 }
