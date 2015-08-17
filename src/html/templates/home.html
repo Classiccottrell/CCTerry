@@ -1,39 +1,37 @@
-<div class="row">
+<div id="main">
+	
+	<div class="row">
 
+		<div class="large-6 medium-6 small-12 columns">
+			<p class="side-txt">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis, libero posuere commodo mollis, sem sapien condimentum erat, sit amet vestibulum eros justo eu nisi.
+			</p>
+		</div>
 
-<div class="large-6 medium-6 small-12 columns">
-	<p class="side-txt">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis, libero posuere commodo mollis, sem sapien condimentum erat, sit amet vestibulum eros justo eu nisi.
-	</p>
-</div>
-	<div class="large-6 medium-6 small-12 columns">
-		<tg-form model="contact" post-submit-url="share" ng-submit="submitCustom()">
-			<div class="row">
-				<div class="small-12 medium-3 columns">
+		<div class="large-6 medium-6 small-12 columns">
+			
+				<tg-form model="contact" post-submit-url="share" ng-submit="submitCustom()">
+			<div>
+				
 					<label class="label-mover" for="firstName">First Name</label>
-				</div>
-				<div class="small-12 medium-9 padding-disable columns">
+				
+			
 					<tg-input name="firstName" disable-label required></tg-input>
-				</div>
+			
 			</div>
-			<div class="row">
-				<div class="small-12 medium-3 columns">
-					<label class="label-mover" for="lastName">Last Name</label>
-				</div>
-				<div class="small-12 medium-9 padding-disable columns">
-					<tg-input name="lastName" disable-label required></tg-input>
-				</div>
+			<div>
+				<label class="label-mover" for="lastName">Last Name</label>
+				<tg-input name="lastName" disable-label required></tg-input>
 			</div>
-			<div class="row">
-				<div class="small-12 medium-3 columns">
+			<div>
+				
 					<label class="label-mover" for="email">Email Address</label>
-				</div>
-				<div class="small-12 medium-9 padding-disable columns">
+	
 					<tg-input name="email" type="email" disable-label required></tg-input>
-				</div>
+
 			</div>
-			<div class="row">
-				<div class="small-12 medium-9 medium-offset-3 columns">
+			<div>
+			
 					<tg-sms-opt-in
 						name="mobileOptIn"
 						div-class="padding-disable"
@@ -41,21 +39,31 @@
 						keyword="aaaarrrr"
 						consent-label="Consent Label"
 					></tg-sms-opt-in>
-				</div>
+		
 			</div>
-			<div class="row">
-				<div class="small-12 medium-9 medium-offset-3 columns">
+			<div>
+			
 					<tg-email-opt-in name="emailOptIn" div-class="padding-disable" list-id="12345" api-key="12345" for="email" firstname-field="firstName" lastname-field="lastName"></tg-email-opt-in>
-				</div>
+				
 			</div>
-			<div class="row">
-				<tg-input type="checkbox" name="age_agree" div-class="small-12 medium-9 medium-offset-3 columns" label="<span id='terms-checkbox'>I am at least 16 years of age and agree to the full</span> <a href='#x' target='_blank'>Terms and Conditions</a>" required></tg-input>
+			<div>
+		
+				<tg-input type="checkbox" name="age_agree" div-class="" label="<span id='terms-checkbox'>I am at least 16 years of age and agree to the full</span> <a href='#' target='_blank'>Terms and Conditions</a>" required></tg-input>
 			</div>
-			<div class="row">
-				<div class="small-12 medium-9 medium-offset-3 columns">
-					<button class="radius" type="submit">Submit</button>
-				</div>
+			<div>
+				
+			<button class="radius" type="submit">Submit</button>
+				
 			</div>
 		</tg-form>
+
+
+		</div>
+
+
 	</div>
+
+
 </div>
+
+
