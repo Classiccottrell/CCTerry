@@ -49,9 +49,22 @@ small {
 	    padding-top: 555px;
 }
 
+.gray-box{
+    background: #efefef;
+    padding: 10px 24px;
+    margin: 0 0 20px 0;
+}
+
 #top-nav {
 	border-bottom: 2px dotted #efefef;
     margin-bottom: 26px;
+
+    img {
+		padding-bottom: 4px;
+		margin-left: -4px;
+		width: 130px
+		float: left;
+		}
 }
 
 .side-txt {
