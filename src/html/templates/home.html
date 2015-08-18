@@ -10,23 +10,19 @@
 
 		<div class="large-6 medium-6 small-12 columns">
 			<div class="gray-box">
-				 
+
 				<tg-form model="contact" post-submit-url="share" ng-submit="submitCustom()">
-			<div>
+			
+		
 				<label class="label-mover" for="firstName">First Name</label>
 				<tg-input name="firstName" disable-label required></tg-input>
 			
-			</div>
-			<div>
 				<label class="label-mover" for="lastName">Last Name</label>
 				<tg-input name="lastName" disable-label required></tg-input>
-			</div>
-			<div>
+
 				<label class="label-mover" for="email">Email Address</label>
 				<tg-input name="email" type="email" disable-label required></tg-input>
-			</div>
-			<div>
-			
+		
 					<tg-sms-opt-in
 						name="mobileOptIn"
 						div-class="padding-disable"
@@ -35,19 +31,16 @@
 						consent-label="Consent Label"
 					></tg-sms-opt-in>
 		
-			</div>
-			<div>
+
 					<tg-email-opt-in name="emailOptIn" div-class="padding-disable" list-id="12345" api-key="12345" for="email" firstname-field="firstName" lastname-field="lastName"></tg-email-opt-in>
-			</div>
-			<div>
+
 		
-				<tg-input type="checkbox" name="age_agree" div-class="" label="<span id='terms-checkbox'>I am at least 16 years of age and agree to the full</span> <a href='#' target='_blank'>Terms and Conditions</a>" required></tg-input>
-			</div>
-			<div>
+					<div id="age"><tg-input type="checkbox" name="age_agree" div-class="" label="I am at least 16 years of age and agree to the full <a href='#' target='_blank'>Terms and Conditions</a>" required></tg-input></div>
+
 				
-			<button class="radius" type="submit">Submit</button>
+			<button class="submit" type="submit">Submit</button>
 				
-			</div>
+		
 		</tg-form>
 
 			</div>
