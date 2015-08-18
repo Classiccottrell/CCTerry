@@ -6,16 +6,22 @@
 
 // Fix Checkbox wrapping problem
 
+html {
+	font-size: 'Maven Pro', sans-serif;
+}
+
+
 input[type="checkbox"] {
   margin-right: 0.5rem;
   margin-bottom: 0;
 }
 
 label {
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 label.label-mover {
+	margin-bottom: 0.4em;
 	margin-left: 1em;
 }
 
@@ -38,16 +44,25 @@ h1 {
 	font-size: 22px;
 }
 
-h3 {
-	
+h2 {
+	font-size: 20px;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
+h2,h2,h3 {
+	color: $purple;
 }
 
 small {
 	font-size: 11px;
-	letter-spacing: 15px;
 	padding-top: 0;
 	margin-top: 0;
 	line-height: 2;
+
+	a {
+		color: $white;
+	}
 
 }
 
@@ -65,7 +80,23 @@ small {
     background: #efefef;
     padding: 2em 10px 1em;
     margin: 0 0 20px 0;
+
+    p {
+    	margin-bottom: 0;
+    }
 }
+
+
+.gray-box2{
+    background: #efefef;
+    padding: 1em 30px 1em;
+    margin: 0 0 20px 0;
+
+    p {
+    	margin-bottom: 0;
+    }
+}
+
 
 #top-nav {
 	border-bottom: 2px dotted #efefef;
