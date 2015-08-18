@@ -6,7 +6,7 @@
 
 // Fix Checkbox wrapping problem
 
-html {
+html,body {
 	font-size: 'Maven Pro', sans-serif;
 }
 
@@ -45,7 +45,7 @@ h1 {
 }
 
 h2 {
-	font-size: 20px;
+	font-size: 23px;
 	padding-bottom: 10px;
 	font-weight: bold;
 }
@@ -80,6 +80,7 @@ small {
     background: #efefef;
     padding: 2em 10px 1em;
     margin: 0 0 20px 0;
+    margin-right: 60px;
 
     p {
     	margin-bottom: 0;
@@ -91,6 +92,7 @@ small {
     background: #efefef;
     padding: 1em 30px 1em;
     margin: 0 0 20px 0;
+    margin-right: 60px;
 
     p {
     	margin-bottom: 0;
@@ -136,6 +138,7 @@ small {
 // =================================================
 
 #footer {
+	margin-top: 3em;
 	p {
 		font-size: 13px;
 	}
