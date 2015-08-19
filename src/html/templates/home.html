@@ -1,6 +1,8 @@
 <div id="main">
-	
+
 	<div class="row">
+	
+	<img src="img/default/header-example.jpg" alt="place holder">
 
 		<div class="large-6 medium-6 small-12 columns">
 			<p class="side-txt">
@@ -22,23 +24,28 @@
 
 				<label class="label-mover" for="email">Email Address</label>
 				<tg-input name="email" type="email" disable-label required></tg-input>
-		
-					<tg-sms-opt-in
-						name="mobileOptIn"
-						div-class="padding-disable"
-						shortcode="82442"
-						keyword="aaaarrrr"
-						consent-label="Consent Label"
-					></tg-sms-opt-in>
-		
 
+				<label class="label-mover" for="promo-code">Promotional Code</label>
+				<tg-input name="promo-code" disable-label required></tg-input>
+		
 					<tg-email-opt-in name="emailOptIn" div-class="padding-disable" list-id="12345" api-key="12345" for="email" firstname-field="firstName" lastname-field="lastName"></tg-email-opt-in>
 
 		
-					<div id="age"><tg-input type="checkbox" name="age_agree" div-class="" label="I am at least 16 years of age and agree to the full <a href='#' target='_blank'>Terms and Conditions</a>" required></tg-input></div>
+					<div id="age"><tg-input type="checkbox" name="age_agree" div-class="" label="I am at least 16 years of age and agree to the full <a href='#' target='_blank'>Terms and Conditions</a>" required></tg-input>
+
+					</div>
+
+
 
 				
 			<button class="submit" type="submit">Submit</button>
+
+					<div class="pp-txt">
+						<small><strong>PRIVACY POLICY:</strong> Any personal information you provide to Gordmans is held in the strictest confidence.
+						We do not give or sell any of this information to outside organizations.</small>
+						<br> <br>
+						<small>By giving us your email address, you agree to receive additional Gordmans email. You may unsubscribe at any time.</small>
+					</div>
 				
 		
 		</tg-form>

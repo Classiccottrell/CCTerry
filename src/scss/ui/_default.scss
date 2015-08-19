@@ -23,6 +23,8 @@ label {
 label.label-mover {
 	margin-bottom: 0.4em;
 	margin-left: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 a {
@@ -73,9 +75,9 @@ small {
 // =================================================
 
 
-#main {
-	    padding-top: 555px;
-}
+// #main {
+// 	    padding-top: 555px;
+// }
 
 .gray-box{
     background: #efefef;
@@ -133,6 +135,9 @@ small {
 	margin-left: 1em;
 }
 
+.pp-txt {
+	margin-left: 1em;
+}
 
 // =================================================
 // ==================== Footer =====================
