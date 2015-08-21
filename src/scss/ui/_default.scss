@@ -7,7 +7,7 @@
 // Fix Checkbox wrapping problem
 
 html,body {
-	font-size: 'Maven Pro', sans-serif;
+	// font-size: 'Maven Pro', sans-serif;
 }
 
 
@@ -36,11 +36,10 @@ a {
 // ==================== Header =====================
 // =================================================
 body {
-	background-image: url ("https://www.gordmans-direct.tag.ga/img/default/header-bg.jpg");
+	// background-image: url ("https://www.gordmans-direct.tag.ga/img/default/header-bg.jpg");
 }
 
 h1 {
-	
 	padding-bottom: 0;
 	margin-bottom: 0;
 	font-size: 22px;
@@ -48,9 +47,11 @@ h1 {
 
 h2 {
 	font-size: 23px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
+	padding-top: 20px;
 	font-weight: bold;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 h2,h2,h3 {
@@ -75,15 +76,25 @@ small {
 // =================================================
 
 
-// #main {
-// 	    padding-top: 555px;
-// }
+div.girls {
+	position: absolute;
+	width: 50%;
+	max-width: 900px;
+
+	img {
+		// max-width: 900px;
+		position: relative;
+		right: 20%;
+	}
+
+}
+
 
 .gray-box{
     background: #efefef;
     padding: 2em 10px 1em;
     margin: 0 0 20px 0;
-    margin-right: 60px;
+    margin-right: 0px;
 
     p {
     	margin-bottom: 0;
@@ -92,10 +103,10 @@ small {
 
 
 .gray-box2{
-    background: #efefef;
+    // background: #efefef;
     padding: 1em 30px 1em;
     margin: 0 0 20px 0;
-    margin-right: 60px;
+    margin-right: 0px;
 
     p {
     	margin-bottom: 0;
@@ -125,18 +136,33 @@ small {
 // ==================== Form =====================
 // =================================================
 
-.submit {
-	margin-top: 1em;
-	margin-left: 1em;
-	width: 40%;
-}
-
 #age {
 	margin-left: 1em;
 }
 
 .pp-txt {
+	p {
+		font-size: 13px;
+	}
 	margin-left: 1em;
+}
+
+
+a.submit {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+img {
+	display: block;
+	margin: 0 auto;
+	max-width: 80%;
+	text-align: center;
+	}
+}
+
+button {
+	background-color: transparent;
 }
 
 // =================================================
