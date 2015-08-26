@@ -2,7 +2,7 @@
 
 	<div class="row">
 	
-	<img class ="show-for-small-only" src="img/small/landing-top-image.jpg" alt="Sign up and get a Coupon">
+		<img class ="show-for-small-only" src="img/small/landing-top-image.jpg" alt="Sign up and get a Coupon">
 
 		<div class="girls hide-for-small">
 			<img class="hide-sm" src="img/default/landing-girl.jpg" alt="Gordmans girl">
@@ -10,45 +10,37 @@
 
 		<div class="push-6 large-6 medium-6 small-12 columns">
 
-		<img src="img/default/landing-page-txt.jpg" class="hide-for-small" alt="Sign up and get a Coupon">
+			<img src="img/default/landing-page-txt.jpg" class="hide-for-small" alt="Sign up and get a Coupon">
 
+			<h2>Fill out the form below.</h2>
 
-		<h2>Fill out the form below.</h2>
 			<div class="gray-box">
 
-				<tg-form model="contact" post-submit-url="share" ng-submit="submitCustom()">
+				<tg-form model="contact" post-submit-url="share">
 			
-		
-				<!-- <label class="label-mover" for="firstName">First Name</label>
-				<tg-input name="firstName" disable-label required></tg-input>
-			
-				<label class="label-mover" for="lastName">Last Name</label>
-				<tg-input name="lastName" disable-label required></tg-input> -->
-				
-				<label class="label-mover" for="email">Email Address</label>
-				<tg-input name="email" type="email" disable-label required></tg-input>
+					<label class="label-mover" for="email">Email Address</label>
+					<tg-input name="email" type="email" disable-label required></tg-input>
 
-				<label class="label-mover" for="promo-code">Promotional Code</label>
-				<tg-input name="promo-code" disable-label required></tg-input>
-		
+					<label class="label-mover" for="promoCode">Promotional Code</label>
+					<tg-input name="promoCode" disable-label required></tg-input>
+					<small class="error" ng-show="contactForm.promoCode.$error.invalid && contactSubmitted">Promo Code is invalid.</small>
+					<small class="error" ng-show="contactForm.promoCode.$error.claimed && contactSubmitted">Promo Code is has already been claimed.</small>
+
 					<tg-email-opt-in name="emailOptIn" div-class="padding-disable" list-id="12345" api-key="12345" for="email" firstname-field="firstName" lastname-field="lastName"></tg-email-opt-in>
 
-		
-					<div id="age"><tg-input type="checkbox" name="age_agree" div-class="" label="I am at least 18 years of age or older and agree to the <a href='#' target='_blank'>Terms and Conditions</a>" required></tg-input>
-
+					<div id="age">
+						<tg-input type="checkbox" name="age_agree" div-class="" label="I am at least 18 years of age or older and agree to the <a href='#' target='_blank'>Terms and Conditions</a>" required required-error="This field is required."></tg-input>
 					</div>
 
+				</tg-form>
 
-					<div class="pp-txt">
-						<p><strong>PRIVACY POLICY:</strong> Any personal information you provide to Gordmans is held in the strictest confidence. We do not give or sell any of this information to outside organizations.</p>
-						
-					</div>
+				<div class="pp-txt">
+					<p><strong>PRIVACY POLICY:</strong> Any personal information you provide to Gordmans is held in the strictest confidence. We do not give or sell any of this information to outside organizations.</p>
+				</div>
 
 			</div>
 
-			<a class="submit" type="submit"><img src="img/default/submit-btn.jpg" alt="submit the form and get the coupon"></a>
-
-			</tg-form>
+			<a class="submit" href="" ng-click="submitCustom()"><img src="img/default/submit-btn.jpg" alt="submit the form and get the coupon"></a>
 
 			<div id="footer">
 				<p><a href="https://www.gordmans.com/">Gordmans.com</a></p>
