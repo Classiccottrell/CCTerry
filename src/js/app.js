@@ -34,10 +34,10 @@ angular.module('app')
 			templateUrl: 'html/templates/home.html',
 			controller: 'HomeController'
 		})
-		.state('share', {
-			url: '/share',
-			templateUrl: 'html/templates/share.html',
-			controller: 'ShareController'
+		.state('thank-you', {
+			url: '/thank-you?promoCode',
+			templateUrl: 'html/templates/thank-you.html',
+			controller: 'ThankYouController'
 		})
 		;
 	}
