@@ -24,7 +24,7 @@
 					<label class="label-mover" for="promoCode">Promotional Code</label>
 					<tg-input name="promoCode" disable-label required></tg-input>
 					<small class="error" ng-show="contactForm.promoCode.$error.invalid && contactSubmitted">Promo Code is invalid.</small>
-					<small class="error" ng-show="contactForm.promoCode.$error.claimed && contactSubmitted">Promo Code is has already been claimed.</small>
+					<small class="error" ng-show="contactForm.promoCode.$error.claimed && contactSubmitted">Promo Code has already been claimed.</small>
 
 					<tg-email-opt-in name="emailOptIn" div-class=" cheak padding-disable" list-id="12345" api-key="12345" for="email" firstname-field="firstName" lastname-field="lastName"></tg-email-opt-in>
 
