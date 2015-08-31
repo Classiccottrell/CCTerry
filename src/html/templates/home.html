@@ -25,9 +25,8 @@
 					<tg-input name="promoCode" disable-label required></tg-input>
 					<small class="error" ng-show="contactForm.promoCode.$error.invalid && contactSubmitted">Promo Code is invalid.</small>
 					<small class="error" ng-show="contactForm.promoCode.$error.claimed && contactSubmitted">Promo Code is has already been claimed.</small>
-					<br>
-					<br>
-					<tg-email-opt-in name="emailOptIn" div-class="cheak padding-disable" list-id="12345" api-key="12345" for="email" firstname-field="firstName" lastname-field="lastName"></tg-email-opt-in>
+					
+					<tg-email-opt-in name="emailOptIn" div-class=" cheak padding-disable" list-id="12345" api-key="12345" for="email" firstname-field="firstName" lastname-field="lastName"></tg-email-opt-in>
 
 					<div id="age">
 						<tg-input type="checkbox" name="age_agree" div-class="" label="I am at least 18 years of age or older and agree to the <a href='files/terms.pdf' target='_blank'>Terms and Conditions</a>" required required-error="This field is required."></tg-input>
