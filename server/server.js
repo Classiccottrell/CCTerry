@@ -80,7 +80,7 @@ app.route('/form').post(function (req, res, next) {
 			throw new HTTPError(400, 'already claimed');
 		}
 
-		return DB.queryAsync('UPDATE gordmans_direct_codes SET claimed = true WHERE code = ?', [code]);
+		return DB.queryAsync('UPDATE gordmans_direct_codes SET claimed = NOW() WHERE code = ?', [code]);
 	})
 	.then(function () {
 		var data = {
