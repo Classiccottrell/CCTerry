@@ -11,6 +11,12 @@ angular.module('app')
 	'$state',
 	'$http',
 	function ($scope, taggaIID, $state, $http) {
+		$scope.$watch('contact', function (newV) {
+			if( ! newV ) return;
+
+			$scope.contact.emailOptIn.optin = true;
+		});
+
 		$scope.submitCustom = function () {
 			$scope['contactForm'].promoCode.$error.invalid = false;
 			$scope['contactForm'].promoCode.$error.claimed = false;
