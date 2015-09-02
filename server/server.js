@@ -91,7 +91,9 @@ app.route('/form').post(function (req, res, next) {
 		};
 
 		Object.keys(row).map(function (key) {
-			data.form[key] = row[key];
+			if( row[key] !== null ) {
+				data.form[key] = row[key];
+			}
 		});
 
 		var optInPromise = taggaProxy.optIn.submit(data.form);
@@ -108,6 +110,7 @@ app.route('/form').post(function (req, res, next) {
 	})
 	.catch(function (err) {
 		console.log(err);
+		console.log(err.stack);
 		res.status(err.status || 500).json({
 			status: 'failed',
 			error: err
