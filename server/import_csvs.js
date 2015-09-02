@@ -42,6 +42,8 @@ DB.connectAsync()
 			return data[key];
 		});
 
+		array.push(argv.file.split('/').slice(-1)[0]);
+
 		entries.push(array);
 	})
 	.on('end', function () {
@@ -51,13 +53,17 @@ DB.connectAsync()
 		var chunks = chunk(entries, splitNum);
 
 		return Promise.map(chunks, function (chunk) {
-			return DB.queryAsync('INSERT INTO gordmans_direct_codes (intelligent_mail_barcode, sack_and_pa, seque, opt_endorsement_line, code, fullname, altaddr, deladdr, city, st, zipcode, vis, list) VALUES ?', [chunk])
+			return DB.queryAsync('INSERT INTO gordmans_direct_codes (fullname, altaddr, deladdr, city, st, zipcode, crm, code, list) VALUES ?', [chunk]);
+			// return DB.queryAsync('INSERT INTO gordmans_direct_codes (code, crm, first, last, list) VALUES ?', [chunk]);
 		})
 		.then(function (insertedChunk) {
 			console.log('loaded', insertedChunk.length, 'chunks of', splitNum, 'rows');
 		})
 		.catch(function (err) {
 			console.log('err while inserting', err);
+		})
+		.finally(function () {
+			process.exit();
 		});
 	});
 
