@@ -1,6 +1,8 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+
 var merge = require('merge');
+
 var colors = require('colors/safe');
 var Promise = require('bluebird');
 var request = require('request');
@@ -66,9 +68,10 @@ app.use(bodyParser.json({
 
 app.route('/form').post(function (req, res, next) {
 	var code = req.body.form_data.promoCode;
+	var email = req.body.form_data.email;
 	var row;
 
-	DB.queryAsync('SELECT * FROM gordmans_direct_codes WHERE code = ?', [code])
+	DB.queryAsync('SELECT * FROM gordmans_direct_codes WHERE code = ? AND claimed IS NULL', [code])
 	.spread(function (rows, cols) {
 		if( ! rows.length ) {
 			throw new HTTPError(400, 'invalid code');
@@ -80,7 +83,14 @@ app.route('/form').post(function (req, res, next) {
 			throw new HTTPError(400, 'already claimed');
 		}
 
-		return DB.queryAsync('UPDATE gordmans_direct_codes SET claimed = NOW() WHERE code = ?', [code]);
+		var updateQuery = [
+			'UPDATE gordmans_direct_codes',
+			'SET claimed = NOW(),',
+			'email = ?',
+			'WHERE id = ?'
+		];
+
+		return DB.queryAsync(updateQuery.join(' '), [email, row.id]);
 	})
 	.then(function () {
 		var data = {
@@ -110,7 +120,6 @@ app.route('/form').post(function (req, res, next) {
 	})
 	.catch(function (err) {
 		console.log(err);
-		console.log(err.stack);
 		res.status(err.status || 500).json({
 			status: 'failed',
 			error: err
