@@ -3206,7 +3206,7 @@ angular.module('tagga-twt')
         var name = element.getAttribute('name');
         propertyName = util.camelCase(name);
         var divClass = element.getAttribute('div-class') || 'large-12 columns';
-        var label = element.getAttribute('label') || 'Yes! I want to receive the latest offers, promotions and news via phone.';
+        var label = element.getAttribute('label') || 'Yes!';
         shortcode = element.getAttribute('shortcode');
         keyword = element.getAttribute('keyword');
 
