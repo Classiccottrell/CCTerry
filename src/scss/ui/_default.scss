@@ -4,6 +4,16 @@
 // ==================== General ====================
 // =================================================
 
+
+
+//My Main Blue
+
+$blue1 : #253C82;
+$blue2 : #131F42;
+$blue3 : #375AC2;
+$blue4 : #3A60CF;
+$blue5 : #304EA8;
+
 // Fix Checkbox wrapping problem
 
 input[type="checkbox"] {
@@ -19,20 +29,16 @@ label {
 // ==================== Header =====================
 // =================================================
 body {
-	color: $white;
-	background-image: url ("img/bg.jpg")
+	// color: $white;
+	// background-image: url ("img/bg.jpg")
 }
 
 h1 {
-	color: $white;
 	padding-bottom: 0;
 	margin-bottom: 0;
 	font-size: 24px;
 }
 
-h3 {
-	color: $white;
-}
 
 small {
 	font-size: 11px;
@@ -65,7 +71,7 @@ a {
 #header {
 	border-bottom: 2px solid $blue5;
 	margin-bottom: 150px;
-	background-color: $jet;
+	background-color: none;
 
 	.cc-logo {
 	height: 150px;
@@ -86,7 +92,7 @@ a {
 		// padding: 1em 2em;
 		// border-radius: 15px;
 		a {
-			color: $white;
+			color: $blue2;
 			font-weight: light;
 			font-size: 1em;
 			font-family: Menlo;
