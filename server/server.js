@@ -1,10 +1,37 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+
 var merge = require('merge');
+
 var colors = require('colors/safe');
 var Promise = require('bluebird');
 var request = require('request');
 Promise.promisifyAll(request);
+
+var mysql = require('mysql');
+Promise.promisifyAll(require('mysql/lib/Connection').prototype);
+Promise.promisifyAll(require('mysql/lib/Pool').prototype);
+
+var HTTPError = require('node-http-error');
+
+var DB = mysql.createConnection({
+	host: 'tagga-prod.clypjybbwtoo.us-east-1.rds.amazonaws.com',
+	user: 'admin_inv',
+	password: 'uvTochVont',
+	database: 'tagga-platform'
+});
+
+DB.connectAsync()
+.then(function () {
+	console.log(colors.green('Connected to database.'));
+})
+.catch(function (err) {
+	if( err ) {
+		console.log(colors.red('Error establishing database connection! Fatal.'));
+		console.log(err);
+		process.exit(-1);
+	}
+});
 
 var TaggaProxy = require('tagga-proxy');
 //taggaProxy config
@@ -40,17 +67,50 @@ app.use(bodyParser.json({
 }));
 
 app.route('/form').post(function (req, res, next) {
-	var data = {
-		iid: req.body.iid,
-		referer: req.get('Referer'),
-		widgetLabel: '',
-		form: req.body.form_data
-	};
+	var code = req.body.form_data.promoCode;
+	var email = req.body.form_data.email;
+	var row;
 
-	var optInPromise = taggaProxy.optIn.submit(data.form);
-	var formPromise = taggaProxy.form.submit(data);
+	DB.queryAsync('SELECT * FROM gordmans_direct_codes WHERE code = ? AND claimed IS NULL', [code])
+	.spread(function (rows, cols) {
+		if( ! rows.length ) {
+			throw new HTTPError(400, 'invalid code');
+		}
 
-	Promise.all([optInPromise, formPromise])
+		row = rows[0];
+
+		if( row.claimed ) {
+			throw new HTTPError(400, 'already claimed');
+		}
+
+		var updateQuery = [
+			'UPDATE gordmans_direct_codes',
+			'SET claimed = NOW(),',
+			'email = ?',
+			'WHERE id = ?'
+		];
+
+		return DB.queryAsync(updateQuery.join(' '), [email, row.id]);
+	})
+	.then(function () {
+		var data = {
+			iid: req.body.iid,
+			referer: req.get('Referer'),
+			widgetLabel: '',
+			form: req.body.form_data
+		};
+
+		Object.keys(row).map(function (key) {
+			if( row[key] !== null ) {
+				data.form[key] = row[key];
+			}
+		});
+
+		var optInPromise = taggaProxy.optIn.submit(data.form);
+		var formPromise = taggaProxy.form.submit(data);
+
+		return Promise.all([optInPromise, formPromise])
+	})
 	.spread(function (optIn, form) {
 		res.status(200).json({
 			status: 'succeeded',
@@ -60,7 +120,7 @@ app.route('/form').post(function (req, res, next) {
 	})
 	.catch(function (err) {
 		console.log(err);
-		res.status(500).json({
+		res.status(err.status || 500).json({
 			status: 'failed',
 			error: err
 		});

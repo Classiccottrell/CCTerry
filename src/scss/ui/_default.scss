@@ -21,17 +21,34 @@ input[type="checkbox"] {
   margin-bottom: 0;
 }
 
+
 label {
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
+}
+
+label.label-mover {
+	margin-bottom: 0.4em;
+	margin-left: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+a {
+	color: #494949;
+    text-decoration: underline;
 }
 
 // =================================================
 // ==================== Header =====================
 // =================================================
+<<<<<<< HEAD
 body {
 	// color: $white;
 	// background-image: url ("img/bg.jpg")
 }
+=======
+
+>>>>>>> 3829143db2245b629476f11908357dedd2759264
 
 h1 {
 	padding-bottom: 0;
@@ -39,35 +56,53 @@ h1 {
 	font-size: 24px;
 }
 
+<<<<<<< HEAD
+=======
+h2 {
+	font-size: 23px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h2,h2,h3 {
+	color: $purple;
+}
+>>>>>>> 3829143db2245b629476f11908357dedd2759264
 
 small {
 	font-size: 11px;
-	letter-spacing: 15px;
 	padding-top: 0;
 	margin-top: 0;
 	line-height: 2;
 
+	a {
+		color: $white;
+	}
+
 }
 
-a {
-	color: #3A60CF;
-}
 
 // =================================================
 // ==================== Main =======================
 // =================================================
 
-.intro-blk {
-	small {
-		padding-bottom: 1em;
-		margin-bottom: 1em;
+
+div.girls {
+	position: absolute;
+	width: 50%;
+	max-width: 900px;
+
+	img {
+		position: relative;
+		right: 20%;
 	}
 
-	p {
-		margin-top: 2em;
-	}
 }
 
+<<<<<<< HEAD
 #header {
 	border-bottom: 2px solid $blue5;
 	margin-bottom: 150px;
@@ -78,14 +113,22 @@ a {
 	margin: 0 auto;
 	display: inline-block;
 	
+=======
+
+.gray-box{
+    background: #efefef;
+    padding: 2em 10px 1em;
+    margin: 0 0 20px 0;
+    margin-right: 0px;
+
+    p {
+    	margin-bottom: 0;
+    }
+>>>>>>> 3829143db2245b629476f11908357dedd2759264
 }
 
-	ul,li {
-		list-style-type: none;
-		float: right;
-		margin: 1em;
-	}
 
+<<<<<<< HEAD
 	li {
 		display: inline-block;
 		// background-color: $blue4;
@@ -97,32 +140,109 @@ a {
 			font-size: 1em;
 			font-family: Menlo;
 			letter-spacing: 2px;
+=======
+.gray-box2{
+    padding: 1em 30px 1em;
+    margin: 0 0 20px 0;
+    margin-right: 0px;
+>>>>>>> 3829143db2245b629476f11908357dedd2759264
 
-		}
-		a:hover {
-			border-bottom: 4px solid $blue5;
-			padding-bottom: 8px;
-		}
-
-	}
-
+    p {
+    	margin-bottom: 0;
+    }
 }
 
 
+#top-nav {
+	border-bottom: 2px dotted #efefef;
+    margin-bottom: 26px;
+
+    img {
+		padding-bottom: 4px;
+		margin-left: -4px;
+		width: 130px;
+		float: left;
+		}
+}
+
+.side-txt {
+	color: #4c93d6;
+	font-size: 2em;
+	line-height: 1.5;
+}
+
+.btn {
+	img {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 0.4em;
+		margin-top: 0.5em;
+		padding-top: 1em;
+	}
+}
+
+// a.btn.coupon {
+// 	img {
+// 		max-width: 250px;
+// 	}
+// }
+
+
+// =================================================
+// ==================== Form =====================
+// =================================================
+
+#age {
+	margin-left: 1em;
+}
+
+.pp-txt {
+	p {
+		font-size: 11px;
+	}
+	margin-left: 1em;
+	margin-top: 1em;
+}
+
+
+a.submit {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+img {
+	display: block;
+	margin: 0 auto;
+	max-width: 80%;
+	text-align: center;
+	}
+}
+
+button {
+	background-color: transparent;
+}
+
+.cheak.padding-disable {
+	padding-top: 15px;
+	display: inline-block;
+}
+
+.error small.error, small.error, span.error {
+	font-size: 0.85em;
+}
+
+label small {
+	text-transform: lowercase;
+}
 
 // =================================================
 // ==================== Footer =====================
 // =================================================
 
 #footer {
-	ul {
-		list-style-type: none;
-
-		li {
-			list-style-type: inline;
-			display: inline-block;
-			padding: 0 10px;
-		}
+	margin-top: 3em;
+	p {
+		font-size: 13px;
 	}
-
 }

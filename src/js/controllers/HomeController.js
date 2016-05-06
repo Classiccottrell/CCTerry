@@ -11,7 +11,16 @@ angular.module('app')
 	'$state',
 	'$http',
 	function ($scope, taggaIID, $state, $http) {
+		$scope.$watch('contact', function (newV) {
+			if( ! newV ) return;
+
+			$scope.contact.emailOptIn.optin = true;
+		});
+
 		$scope.submitCustom = function () {
+			$scope['contactForm'].promoCode.$error.invalid = false;
+			$scope['contactForm'].promoCode.$error.claimed = false;
+
 			$scope['contactSubmitted'] = true; //set flag for validation
 
 			//don't submit if form is invalid
@@ -32,10 +41,18 @@ angular.module('app')
 					}
 				})
 				.success(function (resp) {
-					$state.go('share');
+					$state.go('thank-you', {promoCode: $scope.contact.promoCode});
 				})
 				.error(function (resp) {
 					dbg('Error submitting form.', resp);
+
+					if( resp.error.message === 'invalid code' ) {
+						$scope['contactForm'].promoCode.$error.invalid = true;
+					}
+
+					if( resp.error.message === 'already claimed' ) {
+						$scope['contactForm'].promoCode.$error.claimed = true;
+					}
 				});
 			});
 		};

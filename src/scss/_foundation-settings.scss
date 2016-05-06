@@ -96,9 +96,12 @@ $include-html-global-classes: $include-html-classes;
 // $font-weight-bold: bold;
 
 
+<<<<<<< HEAD
+=======
+$purple: #6b388c;
+>>>>>>> 3829143db2245b629476f11908357dedd2759264
 
-
-// $white       : #FFFFFF;
+$white       : #FFFFFF;
 // $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
@@ -119,17 +122,21 @@ $jet         : #222222;
 $black       : #000000;
 
 // We use these as default colors throughout
-$primary-color: $blue1;
-$secondary-color: $blue2;
+// $primary-color: $blue1;
+// $secondary-color: $blue2;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
+<<<<<<< HEAD
 $body-bg: #fff;
+=======
+$body-bg: $white;
+>>>>>>> 3829143db2245b629476f11908357dedd2759264
 // $body-font-color: $white;
-// $body-font-family: Menlo;
+// $body-font-family: 'Maven Pro', sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -467,7 +474,7 @@ $body-bg: #fff;
 // We use these to control button border styles.
 // $button-border-width: 0;
 // $button-border-style: solid;
-// $button-bg-color: $primary-color;
+// $button-bg-color: $purple;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
