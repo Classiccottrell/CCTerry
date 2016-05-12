@@ -41,42 +41,34 @@ a {
 // =================================================
 // ==================== Header =====================
 // =================================================
-<<<<<<< HEAD
-body {
-	// color: $white;
-	// background-image: url ("img/bg.jpg")
-}
-=======
-
->>>>>>> 3829143db2245b629476f11908357dedd2759264
 
 h1 {
-	padding-bottom: 0;
-	margin-bottom: 0;
-	font-size: 24px;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 200;
 }
 
-<<<<<<< HEAD
-=======
 h2 {
-	font-size: 23px;
-	padding-bottom: 20px;
-	padding-top: 20px;
+	font-size: 22px;
 	font-weight: bold;
 	text-transform: uppercase;
-	text-align: center;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 1.7;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 
 h2,h2,h3 {
-	color: $purple;
+	color: $blue2;
 }
->>>>>>> 3829143db2245b629476f11908357dedd2759264
+
 
 small {
 	font-size: 11px;
-	padding-top: 0;
-	margin-top: 0;
-	line-height: 2;
 
 	a {
 		color: $white;
@@ -84,25 +76,64 @@ small {
 
 }
 
+.lead-p {
+	margin-top: 4em;
+	width: 80%;
+	border-left: 6px solid $blue5;
+	line-height: 1.6;
+	font-size: 20px;
+	font-weight: 200;
+	padding-left: 15px;
+	position: relative;
+	left: 10%;
+	opacity: .6;
+}
+
+.intro-blk > .title-lead {
+
+	h1 {
+		padding-bottom: 0;
+		margin-bottom: 0;
+		padding-top: 1em;
+		font-size: 30px;
+		line-height: .5;
+		text-transform: uppercase;
+		font-weight: 200;
+		letter-spacing: 5px;
+	}
+
+	h2 {
+		font-size: 22px;
+		padding-bottom: 0px;
+		padding-top: 20px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: left;
+		line-height: .5;
+	}
+
+
+	small {
+		font-size: 11px;
+		padding-top: 0;
+		margin-top: 0;
+		letter-spacing: 15px;
+		line-height: .2;
+		border-bottom: 1px dashed $blue3;
+		padding-bottom: 5px;
+
+		a {
+			color: $white;
+		}
+
+	}
+}
 
 // =================================================
 // ==================== Main =======================
 // =================================================
 
 
-div.girls {
-	position: absolute;
-	width: 50%;
-	max-width: 900px;
-
-	img {
-		position: relative;
-		right: 20%;
-	}
-
-}
-
-<<<<<<< HEAD
 #header {
 	border-bottom: 2px solid $blue5;
 	margin-bottom: 150px;
@@ -112,10 +143,10 @@ div.girls {
 	height: 150px;
 	margin: 0 auto;
 	display: inline-block;
-	
-=======
+	}
+}
 
-.gray-box{
+.gray-box {
     background: #efefef;
     padding: 2em 10px 1em;
     margin: 0 0 20px 0;
@@ -124,125 +155,26 @@ div.girls {
     p {
     	margin-bottom: 0;
     }
->>>>>>> 3829143db2245b629476f11908357dedd2759264
 }
 
 
-<<<<<<< HEAD
 	li {
 		display: inline-block;
-		// background-color: $blue4;
-		// padding: 1em 2em;
-		// border-radius: 15px;
 		a {
 			color: $blue2;
 			font-weight: light;
 			font-size: 1em;
 			font-family: Menlo;
 			letter-spacing: 2px;
-=======
-.gray-box2{
-    padding: 1em 30px 1em;
-    margin: 0 0 20px 0;
-    margin-right: 0px;
->>>>>>> 3829143db2245b629476f11908357dedd2759264
-
-    p {
-    	margin-bottom: 0;
-    }
-}
-
-
-#top-nav {
-	border-bottom: 2px dotted #efefef;
-    margin-bottom: 26px;
-
-    img {
-		padding-bottom: 4px;
-		margin-left: -4px;
-		width: 130px;
-		float: left;
 		}
 }
 
-.side-txt {
-	color: #4c93d6;
-	font-size: 2em;
-	line-height: 1.5;
-}
+	.gray-box2 {
+	    padding: 1em 30px 1em;
+	    margin: 0 0 20px 0;
+	    margin-right: 0px;
 
-.btn {
-	img {
-		display: block;
-		text-align: center;
-		margin: 0 auto;
-		margin-bottom: 0.4em;
-		margin-top: 0.5em;
-		padding-top: 1em;
+	    p {
+	    	margin-bottom: 0;
+	    }
 	}
-}
-
-// a.btn.coupon {
-// 	img {
-// 		max-width: 250px;
-// 	}
-// }
-
-
-// =================================================
-// ==================== Form =====================
-// =================================================
-
-#age {
-	margin-left: 1em;
-}
-
-.pp-txt {
-	p {
-		font-size: 11px;
-	}
-	margin-left: 1em;
-	margin-top: 1em;
-}
-
-
-a.submit {
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-	width: 100%;
-img {
-	display: block;
-	margin: 0 auto;
-	max-width: 80%;
-	text-align: center;
-	}
-}
-
-button {
-	background-color: transparent;
-}
-
-.cheak.padding-disable {
-	padding-top: 15px;
-	display: inline-block;
-}
-
-.error small.error, small.error, span.error {
-	font-size: 0.85em;
-}
-
-label small {
-	text-transform: lowercase;
-}
-
-// =================================================
-// ==================== Footer =====================
-// =================================================
-
-#footer {
-	margin-top: 3em;
-	p {
-		font-size: 13px;
-	}
-}

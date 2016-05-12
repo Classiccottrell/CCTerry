@@ -2,6 +2,32 @@
 // ================ General Helpers ================
 // =================================================
 
+
+
+/* Line-height */
+@mixin line-height($fontsize, $lineheight){
+
+    line-height: ($lineheight) + px;
+    line-height: ($lineheight/10) + rem;
+
+    margin-top: (($lineheight - $fontsize)/2 * -1) + px;
+    margin-top: ((($lineheight - $fontsize)/2 * -1) / 10 ) + rem;
+    margin-bottom: $lineheight / 1.5 + px;
+}
+
+/* Letter spacing is simpler */
+@mixin letter-spacing($letterspacing) {
+    letter-spacing: $letterspacing/1000;
+}
+
+/* font-size to rem with backup */
+@mixin font-size($sizeValue: 16) {
+  font-size: ($sizeValue) + px;
+  font-size: ($sizeValue/10) + rem;
+}
+
+
+
 // Sticky footers - http://www.cssstickyfooter.com/
 @mixin sticky-footer($footerHeight: 180px) {
   html, body {
