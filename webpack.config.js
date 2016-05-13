@@ -10,8 +10,7 @@ var dir_build = path.resolve(__dirname, 'dist');
 
 module.exports = {
 		entry: {
-			app : path.resolve(__dirname, 'index.js'),
-			vendor : ['./css/vendors.less']
+			app : path.resolve(__dirname, 'index.js')
 		},
 		output: {
 				path: dir_build,

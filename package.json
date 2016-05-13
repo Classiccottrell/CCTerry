@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -f ./dist/*.* && ./node_modules/.bin/webpack -p",
-    "dev": "./node_modules/.bin/webpack-dev-server --hot --inline"
+    "dev": "./node_modules/.bin/webpack-dev-server --hot --inline",
+    "postinstall": "./node_modules/.bin/webpack -p"
   },
   "dependencies": {
     "angular": "latest",
