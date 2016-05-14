@@ -14,6 +14,16 @@ $blue3 : #375AC2;
 $blue4 : #3A60CF;
 $blue5 : #304EA8;
 
+
+
+html { 
+  background: url(img/default/bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 // Fix Checkbox wrapping problem
 
 input[type="checkbox"] {
@@ -123,7 +133,7 @@ small {
 		margin-top: 0;
 		letter-spacing: 15px;
 		line-height: .2;
-		border-bottom: 1px dashed $blue3;
+		border-bottom: 0px dashed $blue3;
 		padding-bottom: 5px;
 
 		a {
@@ -152,6 +162,7 @@ small {
 
 .gray-box {
     background: #efefef;
+    opacity: 0.4;
     padding: 2em 10px 1em;
     margin: 0 0 20px 0;
     margin-right: 0px;
