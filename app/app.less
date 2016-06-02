@@ -1,2 +1,209 @@
-@import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap/less/bootstrap.less";
 @import "~font-awesome/css/font-awesome.css";
+
+@body-bg: #f8dc72;
+
+
+
+// Used to alter default styles that can't be overwritten in foundation/settings
+
+// =================================================
+// ==================== General ====================
+// =================================================
+
+
+
+//My Main Blue
+
+@blue1 : #253C82;
+@blue2 : #131F42;
+@blue3 : #375AC2;
+@blue4 : #3A60CF;
+@blue5 : #304EA8;
+
+
+
+html {
+  background: url('assets/bg.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+// Fix Checkbox wrapping problem
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+}
+
+
+label {
+  margin-bottom: 1em;
+}
+
+label.label-mover {
+	margin-bottom: 0.4em;
+	margin-left: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+a {
+	color: #494949;
+    text-decoration: underline;
+}
+
+p {
+	font-size: 13px;
+}
+
+// =================================================
+// ==================== Header =====================
+// =================================================
+
+h1 {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 200;
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 1.7;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+h2,h2,h3 {
+	color: $blue2;
+}
+
+
+small {
+	font-size: 11px;
+
+	a {
+		color: $white;
+	}
+
+}
+
+.lead-p {
+	margin-top: 4em;
+	width: 80%;
+	border-left: 6px solid $blue5;
+	line-height: 1.6;
+	font-size: 20px;
+	font-weight: 200;
+	padding-left: 15px;
+	position: relative;
+	left: 10%;
+	opacity: .6;
+}
+
+.intro-blk {
+	text-align: left;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+
+.intro-blk > .title-lead {
+
+	h1 {
+		padding-bottom: 0;
+		margin-bottom: 0;
+		padding-top: 1em;
+		font-size: 30px;
+		line-height: .5;
+		text-transform: uppercase;
+		font-weight: 200;
+		letter-spacing: 5px;
+	}
+
+	h2 {
+		font-size: 22px;
+		padding-bottom: 0px;
+		padding-top: 20px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: left;
+		line-height: .5;
+	}
+
+
+	small {
+		font-size: 11px;
+		padding-top: 0;
+		margin-top: 0;
+		letter-spacing: 15px;
+		line-height: .2;
+		border-bottom: 0px dashed $blue3;
+		padding-bottom: 5px;
+
+		a {
+			color: $white;
+		}
+
+	}
+}
+
+// =================================================
+// ==================== Main =======================
+// =================================================
+
+
+#header {
+	border-bottom: 2px solid $blue5;
+	margin-bottom: 150px;
+	background-color: none;
+
+	.cc-logo {
+	height: 150px;
+	margin: 0 auto;
+	display: inline-block;
+	}
+}
+
+.gray-box {
+    background: #efefef;
+    opacity: 0.4;
+    padding: 2em 10px 1em;
+    margin: 0 0 20px 0;
+    margin-right: 0px;
+
+    p {
+    	margin-bottom: 0;
+    }
+}
+
+
+	li {
+		display: inline-block;
+		a {
+			color: $blue2;
+			font-weight: light;
+			font-size: 1em;
+			font-family: Menlo;
+			letter-spacing: 2px;
+		}
+}
+
+	.gray-box2 {
+	    padding: 1em 30px 1em;
+	    margin: 0 0 20px 0;
+	    margin-right: 0px;
+
+	    p {
+	    	margin-bottom: 0;
+	    }
+	}
