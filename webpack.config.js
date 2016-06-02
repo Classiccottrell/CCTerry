@@ -4,8 +4,10 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+
 var dir_js = path.resolve(__dirname, 'app');
-var dir_css = path.resolve(__dirname, 'css');
+var dir_assets = path.resolve(__dirname, 'app', 'assets');
 var dir_build = path.resolve(__dirname, 'dist');
 
 module.exports = {
@@ -33,7 +35,13 @@ module.exports = {
 		plugins: [
 				new ExtractTextPlugin('[name].css', {	allChunks: true }),
 				new webpack.optimize.CommonsChunkPlugin('vendor', '[name].js'),
-				new webpack.NoErrorsPlugin()
+				new webpack.NoErrorsPlugin(),
+				new CopyWebpackPlugin([
+					{
+						from: './app/assets',
+						to: 'assets'
+					}
+				])
 		],
 		module: {
 				loaders: [
@@ -57,7 +65,8 @@ module.exports = {
 								exclude: /index.html$/
 						},
 						{
-								loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap!postcss-loader!less-loader?sourceMap'),
+								// loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap!postcss-loader!less-loader?sourceMap'),
+								loader: ExtractTextPlugin.extract('style-loader', 'raw-loader?sourceMap!postcss-loader!less-loader?sourceMap'),
 								test: /\.less$/
 						}
 				]

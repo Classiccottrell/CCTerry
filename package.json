@@ -26,6 +26,7 @@
     "babel": "latest",
     "babel-loader": "latest",
     "babel-preset-es2015": "latest",
+    "copy-webpack-plugin": "^3.0.1",
     "css-loader": "latest",
     "extract-text-webpack-plugin": "latest",
     "file-loader": "latest",
@@ -36,7 +37,7 @@
     "raw-loader": "^0.5.1",
     "resolve-url": "latest",
     "style-loader": "latest",
-    "url-loader": "latest",
+    "url-loader": "^0.5.7",
     "webpack": "latest",
     "webpack-dev-server": "^1.14.1"
   }
