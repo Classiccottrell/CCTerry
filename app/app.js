@@ -28,6 +28,6 @@ GlobalConfig.$inject = [
 ];
 
 function GlobalConfig($locationProvider, $urlRouterProvider) {
-	$locationProvider.html5Mode(true);
+	// $locationProvider.html5Mode(true);
 	$urlRouterProvider.otherwise('/');
 }

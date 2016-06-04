@@ -5,7 +5,7 @@ var app = express();
 app.use('/', express.static('dist'));
 app.use(morgan('common'));
 
-app.get('/', function (req, res) {
+app.get('*', function (req, res) {
 	res.sendfile('./dist/index.html');
 });
 
