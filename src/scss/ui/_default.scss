@@ -17,11 +17,15 @@ $blue5 : #304EA8;
 
 
 html { 
-  background: url(img/default/bg.jpg) no-repeat center center fixed; 
+  background: url("../img/default/bg.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+body {
+	background: transparent!important;	
 }
 
 // Fix Checkbox wrapping problem
@@ -109,51 +113,61 @@ small {
 	padding-left: 0;
 }
 
+.intro-blk {
 
-.intro-blk > .title-lead {
+	.title-lead {
+		text-align: left; 
 
-	h1 {
-		padding-bottom: 0;
-		margin-bottom: 0;
-		padding-top: 1em;
-		font-size: 30px;
-		line-height: .5;
-		text-transform: uppercase;
-		font-weight: 200;
-		letter-spacing: 5px;
-	}
+		h1 {
+			padding-bottom: 0;
+			margin-bottom: 0;
+			padding-top: 1em;
+			font-size: 30px;
+			line-height: .5;
+			text-transform: uppercase;
+			font-weight: 200;
+			letter-spacing: 5px;
+		}
 
-	h2 {
-		font-size: 22px;
-		padding-bottom: 0px;
-		padding-top: 20px;
-		font-weight: bold;
-		text-transform: uppercase;
-		text-align: left;
-		line-height: .5;
-	}
+		h2 {
+			font-size: 22px;
+			padding-bottom: 0px;
+			padding-top: 20px;
+			font-weight: bold;
+			text-transform: uppercase;
+			line-height: .5;
+		}
 
 
-	small {
-		font-size: 11px;
-		padding-top: 0;
-		margin-top: 0;
-		letter-spacing: 15px;
-		line-height: .2;
-		border-bottom: 0px dashed $blue3;
-		padding-bottom: 5px;
+		small {
+			font-size: 11px;
+			padding-top: 0;
+			margin-top: 0;
+			letter-spacing: 15px;
+			line-height: .2;
+			border-bottom: 0px dashed $blue3;
+			padding-bottom: 5px;
 
-		a {
-			color: $white;
+			a {
+				color: $white;
+			}
+
 		}
 
 	}
+
 }
+
 
 // =================================================
 // ==================== Main =======================
 // =================================================
 
+.cc-logo {
+	padding: 1em;
+	position: relative;
+	top: 1em;
+}
 
 #header {
 	border-bottom: 2px solid $blue5;
