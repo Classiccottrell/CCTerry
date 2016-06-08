@@ -31,6 +31,20 @@ html {
 	background-size: cover;
 }
 
+
+
+html { 
+  background: url("../img/default/bg.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	background: transparent!important;	
+}
+
 // Fix Checkbox wrapping problem
 
 input[type="checkbox"] {
@@ -115,6 +129,7 @@ small {
 	margin-left: 0;
 	padding-left: 0;
 }
+<<<<<<< HEAD:app/app.less
 
 
 .intro-blk > .title-lead {
@@ -139,8 +154,26 @@ small {
 		text-transform: uppercase;
 		text-align: left;
 	}
+=======
 
+.intro-blk {
 
+	.title-lead {
+		text-align: left; 
+>>>>>>> fbaea79f20496f142d54ad2d9ae498a75ca79fb2:src/scss/ui/_default.scss
+
+		h1 {
+			padding-bottom: 0;
+			margin-bottom: 0;
+			padding-top: 1em;
+			font-size: 30px;
+			line-height: .5;
+			text-transform: uppercase;
+			font-weight: 200;
+			letter-spacing: 5px;
+		}
+
+<<<<<<< HEAD:app/app.less
 	small {
 		font-size: 11px;
 		padding-top: 0;
@@ -149,18 +182,47 @@ small {
 		line-height: .2;
 		border-bottom: 0px dashed $blue3;
 		padding-bottom: 5px;
+=======
+		h2 {
+			font-size: 22px;
+			padding-bottom: 0px;
+			padding-top: 20px;
+			font-weight: bold;
+			text-transform: uppercase;
+			line-height: .5;
+		}
 
-		a {
-			color: $white;
+
+		small {
+			font-size: 11px;
+			padding-top: 0;
+			margin-top: 0;
+			letter-spacing: 15px;
+			line-height: .2;
+			border-bottom: 0px dashed $blue3;
+			padding-bottom: 5px;
+
+			a {
+				color: $white;
+			}
+>>>>>>> fbaea79f20496f142d54ad2d9ae498a75ca79fb2:src/scss/ui/_default.scss
+
 		}
 
 	}
+
 }
+
 
 // =================================================
 // ==================== Main =======================
 // =================================================
 
+.cc-logo {
+	padding: 1em;
+	position: relative;
+	top: 1em;
+}
 
 #header {
 	border-bottom: 2px solid $blue5;
