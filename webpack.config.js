@@ -23,6 +23,7 @@ module.exports = {
 		},
 		devServer: {
 				contentBase: dir_build,
+				historyApiFallback: true
 		},
 		postcss: function () {
 				return [require('autoprefixer')];
