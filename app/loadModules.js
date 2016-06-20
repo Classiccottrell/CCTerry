@@ -4,7 +4,7 @@ import uiRouter from 'angular-ui-router';
 let pageTemplates = {
 	home: require('./pages/home.html'),
 	about: require('./pages/about.html'),
-	cool: require('./pages/cool.html'),
+	clientservices: require('./pages/clientservices.html'),
 	newpage: require('./pages/newPage.html')
 };
 
