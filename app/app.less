@@ -1,7 +1,8 @@
 @import "~bootstrap/less/bootstrap.less";
 @import "~font-awesome/css/font-awesome.css";
+@import "~cc-less/gloabl.less";
 
-@body-bg: rgba(66, 06, 66, .2);
+@body-bg: rgba(255, 255, 255, .8);
 
 
 
@@ -24,12 +25,22 @@
 // assets/bg.jpg
 
 html {
-  background: url('assets/bg-water.jpg') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	// background: #ccc;
+ //  background: url('assets/bg-water.jpg') no-repeat center center fixed;
+	// -webkit-background-size: cover;
+	// -moz-background-size: cover;
+	// -o-background-size: cover;
+	// background-size: cover;
+	background: #fff;
+}
+
+body {
+// 	background-image: -webkit-linear-gradient(top, #000052, #f70052);
+// 	background-image: -moz-linear-gradient(top, #000052, #f70052);
+// 	background-image: -ms-linear-gradient(top, #000052, #f70052);
+// 	background-image: -o-linear-gradient(top, #000052, #f70052);
+// 	background-image: linear-gradient(to bottom, #000052, #f70052);
+// 	opacity: .1;
+height: 100%;
 }
 
 img {
@@ -58,7 +69,13 @@ label.label-mover {
 
 a {
 	color: #494949;
-    text-decoration: underline;
+    font-weight: bold;
+    opacity: .5;
+
+    &:hover {
+    	text-decoration: underline;
+    	// color: lighten(#000, 50%);
+    }
 }
 
 
@@ -190,50 +207,6 @@ button:hover {
 
 
 
-.title-lead {
-	color: #fff;
-	text-shadow: -1px 2px 4px rgba(150, 150, 150, 0.6);
-
-}
-
-.intro-blk > .title-lead {
-
-	h1 {
-		font-size: 30px;
-		line-height: 1;
-		text-transform: uppercase;
-		font-weight: 200;
-		letter-spacing: 5px;
-	}
-
-	h2 {
-		font-size: 22px;
-		padding-bottom: 0px;
-		padding-top: 0px;
-		margin-top: 0;
-		margin-bottom: 0;
-		font-weight: bold;
-		text-transform: uppercase;
-		text-align: left;
-	}
-
-
-	small {
-		font-size: 11px;
-		padding-top: 0;
-		margin-top: 0;
-		letter-spacing: 15px;
-		line-height: .2;
-		border-bottom: 0px dashed $blue3;
-		padding-bottom: 5px;
-
-		a {
-			color: $white;
-		}
-
-	}
-}
-
 
 // =================================================
 // ==================== Main =======================
@@ -291,28 +264,7 @@ button:hover {
 	margin-bottom: 2em;
 }
 
-#main-nav {
-	text-shadow: -1px 2px 4px rgba(150, 150, 150, 1);
 
-	h5 {
-
-
-		a{
-			color: #fff;
-			small{
-				color: #fff;
-			}
-		}
-	}
-	ul{
-		margin-top: 2em;
-		li{
-			a{
-				color: #fff;
-			}
-		}
-	}
-}
 
 img.profile {
 	border-radius: 100%;
@@ -320,7 +272,7 @@ img.profile {
 	display: block;
 	vertical-align: middle;
 	position: relative;
-	top: 4em;
+	top: 0em;
 	right: 1em;
 	border: 10px solid #fff;
 
@@ -335,7 +287,7 @@ img.profile {
 
 .hi-text {
 	background-color: rgba(255, 255, 255, 0.8);
-	border-top: 2px solid rgba(10, 98, 63, 0.5);
+	// border-top: 2px solid rgba(10, 98, 63, 0.5);
 	padding: 0em 1.5em;
 	padding-bottom: 1em;
 	width: 100%;
@@ -364,6 +316,11 @@ img.profile {
 	padding-bottom: 1em;
 	margin-top: 2em;
 	background-color: rgba(255, 255, 255, 0.8);
+	border-top: 1px solid rgba(33, 33, 2, 0.1);
+	border-bottom: 1px solid rgba(33, 33, 2, 0.1);
+
+	// position: absolute;
+	// bottom: 0;
 }
 
 .work {
@@ -374,7 +331,7 @@ img.profile {
 #blog-post {
 	background-color: rgba(255, 255, 255, 0.8);
 	padding: 1em;
-	margin-top:3em;
+	margin-top:0em;
 
 	h3 {
 		padding-top: 0;
@@ -403,6 +360,7 @@ img.profile {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000052', endColorstr='#f70052',GradientType=1 ); /* IE6-9 */
 	height: 5px;
 }
+
 
 
 header {
