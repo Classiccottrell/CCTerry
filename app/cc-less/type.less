@@ -25,26 +25,75 @@ h2 {
 	margin-bottom: 0;
 	font-weight: bold;
 	text-transform: uppercase;
-	letter-spacing: 5px;
+	letter-spacing: 0px;
 	opacity: .6;
 }
-p {
-	color: #000;
-	font-size: 16px;
+
+
+//
+// small {
+// 	font-size: 11px;
+// 	padding-top: 0;
+// 	margin-top: 0;
+// 	letter-spacing: 10px;
+// 	line-height: .2;
+// 	padding-bottom: 5px;
+// 	color: #000;
+// 	opacity: 0.2;
+// }
+
+	h1 {
+		font-size: 3em;
+		text-transform: uppercase;
+		font-weight: 200;
+		color: #B36458;
+	}
+
+	h2 {
+		font-size: 2.2em;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	h3 {
+		font-size: 17px;
+		// color: #f70052;
+		line-height: 1.7;
+		font-weight: 500;
+		text-decoration: none;
+	}
+
+	h6 {
+	-webkit-transform: rotate(90deg);
+	position: absolute;
+	font-size: 30px;
 	font-weight: bold;
-}
+	text-transform: uppercase;
+	top: 12em;
+	left:-5.3em;
+	color: rgba(255, 255, 255, 0.3);
+	padding: 0;
+	margin: 0;
+	line-height: 0;
+	}
 
+	small {
+		font-size: 11px;
 
-small {
-	font-size: 11px;
-	padding-top: 0;
-	margin-top: 0;
-	letter-spacing: 10px;
-	line-height: .2;
-	padding-bottom: 5px;
-	color: #000;
-	opacity: 0.2;
+		a {
+			color: $white;
+		}
+
+	}
+
 
 	a {
-		color: $white;
+		color: #494949;
+	    font-weight: bold;
+	    opacity: .5;
+
+	    &:hover {
+	    	text-decoration: underline;
+	    	// color: lighten(#000, 50%);
+	    }
 	}
