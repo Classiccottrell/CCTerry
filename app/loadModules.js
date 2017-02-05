@@ -5,7 +5,7 @@ let pageTemplates = {
 	home: require('./pages/home.html'),
 	about: require('./pages/about.html'),
 	cool: require('./pages/cool.html'),
-	newpage: require('./pages/newPage.html'),
+	work: require('./pages/work.html'),
 	adidas: require('./pages/adidas.html'),
 	edsmith: require('./pages/edsmith.html')
 };
