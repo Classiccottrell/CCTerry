@@ -7,7 +7,7 @@ let pageTemplates = {
 	cool: require('./pages/cool.html'),
 	newpage: require('./pages/newPage.html'),
 	adidas: require('./pages/adidas.html'),
-	eds: require('./pages/edsmith.html')
+	edsmith: require('./pages/edsmith.html')
 };
 
 let partialTemplates = {
