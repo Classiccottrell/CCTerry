@@ -1,5 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
+import 'jquery';
+import 'bootstrap';
 
 import template from './app.html';
 import './app.less';

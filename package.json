@@ -9,7 +9,7 @@
     "build": "rm -f ./dist/*.* && ./node_modules/.bin/webpack -p",
     "dev": "./node_modules/.bin/webpack-dev-server --hot --inline",
     "postinstall": "rm -f ./dist/*.* && ./node_modules/.bin/webpack -p",
-    "deploy": "npm run build && git push github `git subtree split --prefix dist master`:master --force"
+    "deploy": "npm run build && git push github `git subtree split --prefix dist`:master --force"
   },
   "dependencies": {
     "angular": "latest",
