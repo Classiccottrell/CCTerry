@@ -8,7 +8,8 @@ let pageTemplates = {
 	work: require('./pages/work.html'),
 	adidas: require('./pages/adidas.html'),
 	edsmith: require('./pages/edsmith.html'),
-	uiux: require('./pages/uiux.html')
+	uiux: require('./pages/uiux.html'),
+	vita: require('./pages/vita.html')
 };
 
 let partialTemplates = {
