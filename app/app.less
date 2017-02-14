@@ -4,6 +4,19 @@
 
 @import "~cc-less/type.less";
 @import "~cc-less/variables.less";
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 320px) { @import "~cc-less/ui/small-only.less"; }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { @import "~cc-less/ui/medium-only.less"; }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { @import "~cc-less/ui/large-only.less"; }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { @import "~cc-less/ui/xlarge-only.less"; }
+
 @import "~cc-less/gloabl.less";
 
 @body-bg: rgba(255, 255, 255, .8);
@@ -113,12 +126,6 @@ hr {
 	border-bottom: 2px solid $blue5;
 	margin-bottom: 0px;
 	background-color: none;
-
-	.cc-logo {
-	height: 150px;
-	margin: 0 auto;
-	display: inline-block;
-	}
 }
 
 .gray-box {
@@ -227,18 +234,3 @@ and (max-device-width : 667px) {
  	}
 
 }
-
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 320px) { @import "~cc-less/ui/small-only.less"; }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { @import "~cc-less/ui/medium-only.less"; }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { @import "~cc-less/ui/large-only.less"; }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { @import "~cc-less/ui/xlarge-only.less"; }
