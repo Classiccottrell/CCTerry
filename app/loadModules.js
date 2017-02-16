@@ -9,7 +9,8 @@ let pageTemplates = {
 	adidas: require('./pages/adidas.html'),
 	edsmith: require('./pages/edsmith.html'),
 	uiux: require('./pages/uiux.html'),
-	vita: require('./pages/vita.html')
+	vita: require('./pages/vita.html'),
+	segmentpage: require('./pages/segment-page-ui.html')
 };
 
 let partialTemplates = {
