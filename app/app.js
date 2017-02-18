@@ -33,7 +33,3 @@ function GlobalConfig($locationProvider, $urlRouterProvider) {
 	// $locationProvider.html5Mode(true);
 	$urlRouterProvider.otherwise('/');
 }
-
-$(document).ready(function(){
-    $(this).scrollTop(0);
-});

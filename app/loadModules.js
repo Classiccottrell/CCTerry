@@ -8,7 +8,7 @@ let pageTemplates = {
 	work: require('./pages/work.html'),
 	adidas: require('./pages/adidas.html'),
 	edsmith: require('./pages/edsmith.html'),
-	uiux: require('./pages/uiux.html'),
+	uiprocess: require('./pages/uiprocess.html'),
 	vita: require('./pages/vita.html'),
 	segmentpage: require('./pages/segment-page-ui.html')
 };
