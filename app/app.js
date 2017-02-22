@@ -17,7 +17,12 @@ angular.module('app', [
 .component('app', {
 	template,
 	restrict: 'E'
-});
+})
+.run(['$transitions', $transitions => {
+	$transitions.onSuccess({}, () => {
+		window.scrollTo(0, 0)
+	});
+}]);
 
 allModules.partials.forEach(partial => {
 	angular.module('app')
