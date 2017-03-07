@@ -4,20 +4,18 @@
 
 @import "~cc-less/type.less";
 @import "~cc-less/variables.less";
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 320px) { @import "~cc-less/ui/small-only.less"; }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { @import "~cc-less/ui/medium-only.less"; }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { @import "~cc-less/ui/large-only.less"; }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { @import "~cc-less/ui/xlarge-only.less"; }
-
 @import "~cc-less/gloabl.less";
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { @import "~cc-less/ui/small-only.less"; }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { @import "~cc-less/ui/medium-only.less"; }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { @import "~cc-less/ui/large-only.less"; }
+
+
 
 @body-bg: rgba(255, 255, 255, .8);
 
