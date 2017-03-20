@@ -7,6 +7,8 @@ let pageTemplates = {
 	cool: require('./pages/cool.html'),
 	work: require('./pages/work.html'),
 	adidas: require('./pages/adidas.html'),
+	nba: require('./pages/nba.html'),
+	ncaa: require('./pages/ncaa.html'),
 	edsmith: require('./pages/edsmith.html'),
 	uiprocess: require('./pages/uiprocess.html'),
 	vita: require('./pages/vita.html'),

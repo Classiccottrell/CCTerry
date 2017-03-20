@@ -46,24 +46,49 @@
 <div class="row">
 
   <div class="col-sm-push-1 col-md-push-1 col-lg-push-1 col-sm-10 col-md-10 col-lg-10">
-<h1 class="text-center">Clients</h1>
+	   <hr>
+		<div class="second-title">
+			<h2 class="text-center">#NBASwingman</h2>
+      <img src="assets/work/squares/tiles-nba-sw.jpg" alt="">
+		</div>
+	</div>
 
-    <div class="row work-blk">
-      <div class="col-sm-6">
-    		<div class="second-title">
-          <a ui-sref="nba" ><img src="assets/work/squares/tiles-nba-sw.jpg" alt=""></a>
-    			<h3 class="text-center">#NBASwingman</h3>
+		<div class="second-title">
+			<hr>
+			<h2 class="text-center">NCAA Football & Basketball</h2>
+		</div>
 
-    		</div>
-      </div>
-      <div class="col-sm-6">
-        <div class="second-title">
-          <a ui-sref="ncaa" ><img src="assets/work/squares/tiles-ncaa-m.jpg" alt=""></a>
-          <h3 class="text-center">NCAA Football & Basketball</h3>
+	<div class="example">
+		<img src="assets/work/adidas/NCAA/videoboard-banner-1280x720.jpg">
+	</div>
 
-    		</div>
-      </div>
+	<div class="col-sm-push-1 col-sm-10">
+	<p>Our NCAA campaigns were different than our other adidas campaigns, as they were event centered. I designed media for jumbotrons and stadium video boards. These channels relied on fans texting a keyword to a number. They were sent a link to a responsive landing page. </p>
+</div>
+
+
+	<div class="row work-blk">
+			<div class="col-sm-4">
+				<img src="assets/work/adidas/NCAA/adidas-ucla-site-direction1v5.jpg">
+			</div>
+			<div class="col-sm-4">
+				<img src="assets/work/adidas/NCAA/iPhone-5S-Black.png">
+			</div>
+			<div class="col-sm-4">
+				<img src="assets/work/adidas/NCAA/adidas-hibbitt-site.jpg">
+			</div>
+	</div>
+  <div class="row page-nav">
+    <div class="col-sm-12">
+      <hr>
+      <a class="nav-link" ui-sref="adidas"> <i class="fa-eraser fa"></i> adidas </a>
+
+      <a class="nav-link" ui-sref="edsmith"> <i class="fa-eraser fa"></i> E.D.SMITH </a>
+
+      <a class="nav-link" ui-sref="uiprocess"><i class="fa-eraser fa"></i> My UX/UI process </a>
+
+      <a class="nav-link" ui-sref="segmentpage"><i class="fa-eraser fa"></i> The Segment Page </a>
     </div>
-
+  </div>
   </div>
 </div><!-- END ROW -->
