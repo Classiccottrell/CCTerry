@@ -1,13 +1,15 @@
 @import "~bootstrap/less/bootstrap.less";
 @import (inline) "~font-awesome/css/font-awesome.css";
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
 
 @import "~cc-less/type.less";
 @import "~cc-less/variables.less";
 @import "~cc-less/gloabl.less";
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { @import "~cc-less/ui/small-only.less"; }
+@media (min-width: @screen-xs-min) { @import "~cc-less/ui/small-only.less"; }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) { @import "~cc-less/ui/medium-only.less"; }
@@ -207,8 +209,16 @@ footer {
 
 
 @media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px) {
+and (min-width : 0px)
+and (max-width : 960px) {
+
+	.brake {
+		div {
+			h2 {
+				font-size: 0.8em;
+			}
+		}
+	}
 
 	.container {
     min-width: 100%;
